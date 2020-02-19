@@ -8,8 +8,9 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <div>
-      <Navbar fixed='top' light expand="sm">
+
+    <Navbar fixed='top' expand="sm" light>
+      <div className='container'>
         <NavbarBrand href="/">{props.siteTitle}</NavbarBrand>
         <NavbarToggler onClick={toggle}/>
         <Collapse isOpen={isOpen} navbar>
@@ -45,8 +46,8 @@ const Header = (props) => {
           </Nav>
           {/*<NavbarText>Simple Text</NavbarText>*/}
         </Collapse>
-      </Navbar>
-    </div>
+      </div>
+    </Navbar>
   )
 }
 
