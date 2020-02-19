@@ -7,9 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Header from "./header"
+import '../styles/index.scss';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,19 +25,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <Header siteTitle={data.site.siteMetadata.title}/>
+      <div className='container' id='content'
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()},
+          Robert Stach, Bavarian Multirotorsquad
+          <br/>Alle Logos und Bilder sind Urheberrechtlich geschützt
+          <br/>Design und Umsetzung von Chi-Tin Ho
         </footer>
       </div>
     </>
