@@ -10,32 +10,29 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Header from "./header"
-import '../styles/index.scss';
+import "../styles/index.scss"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+  const data = useStaticQuery(
+    graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
         }
       }
-    }
-  `)
+    `,
+  )
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title}/>
-      <div className='container' id='content'
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()},
-          Robert Stach, Bavarian Multirotorsquad
-          <br/>Alle Logos und Bilder sind Urheberrechtlich geschützt
-          <br/>Design und Umsetzung von Chi-Tin Ho
-        </footer>
-      </div>
+      <main className='container' id='content'>
+        {children}
+      </main>
+      <Footer/>
     </>
   )
 }

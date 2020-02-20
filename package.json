@@ -1,10 +1,13 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bavarian-multirotor",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "orking with gatsby to see if viable for bmr",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chi-Tin Ho <Ho.Chi-Tin@gmx.de>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.5",
     "gatsby-image": "^2.2.39",
@@ -27,9 +30,6 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -39,12 +39,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
