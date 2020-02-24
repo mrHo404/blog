@@ -2,7 +2,6 @@
 title: 'Third Post - CSS'
 date: '2020-02-19 18:02:00'
 author: 'Tin Ho '
-path: '/third-post'
 image: ../../images/Lipocalypse_Background.jpg
 tags:
 - events

@@ -2,7 +2,6 @@
 title: 'First Post - Introduction'
 date: '2020-02-19 18:00:00'
 author: 'Tin Ho'
-path: '/first-post'
 image: ../../images/Lipocalypse_Background.jpg
 tags: 
 - code
