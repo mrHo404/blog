@@ -1,5 +1,6 @@
 const { slugify } = require("./src/utils/util")
 const path = require("path")
+const authors = require("./src/utils/authors")
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
@@ -36,14 +37,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       return
     }
     res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const author = authors.find(author => author.name === node.frontmatter.author)
+      const imageUrl = author ? author.imageUrl : ''
       createPage({
         path: `${node.fields.slug}`,
         component: singePostTemplate,
         context: {
           //Passing slug as path
           slug: node.fields.slug,
+          //FindAuthour imageUrl and pass it to single-post template
+          imageUrl: imageUrl,
         },
       })
     })
   })
 }
+
+
