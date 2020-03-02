@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Bavarian-MultiRotor`,
     description: `Bleibe auf dem Laufenden was FPV rennen in Deutschland angeht`,
-    author: `@Bavarain-Multirotor`,
+    author: `@Bavarian-Multirotor`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `bavarian-multirotor-homepage`,
+        short_name: `bmr-hp`,
         start_url: `/`,
         background_color: `#00204a`,
         theme_color: `#00204a`,
