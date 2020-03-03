@@ -4,7 +4,7 @@ date: '2020-02-19 18:00:00'
 author: 'Tin Ho'
 image: ../../images/Lipocalypse_Background.jpg
 tags: 
-- code
+- tutorial
 - design
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut tortor pretium. Augue interdum velit euismod in. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Adipiscing commodo elit at imperdiet dui accumsan. Odio ut sem nulla pharetra diam. Augue lacus viverra vitae congue eu consequat ac felis donec. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Ultricies mi eget mauris pharetra. Duis ut diam quam nulla porttitor massa id neque aliquam. Porta lorem mollis aliquam ut porttitor leo. Sociis natoque penatibus et magnis dis.
