@@ -11,7 +11,7 @@ const PaginationLinks = ({ currentPage, nrOfPages }) => {
     <Pagination aria-label="Page navigation example">
       {isFirst ? (
         <PaginationItem disabled>
-          <PaginationLink previous href="/" />
+          <PaginationLink previous/>
         </PaginationItem>
       ) : (
         <PaginationItem>
@@ -35,7 +35,7 @@ const PaginationLinks = ({ currentPage, nrOfPages }) => {
       )}
       {isLast ? (
         <PaginationItem disabled>
-          <PaginationLink next href="/" />
+          <PaginationLink next/>
         </PaginationItem>
       ) : (
         <PaginationItem>
