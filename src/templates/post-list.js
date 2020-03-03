@@ -2,10 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Post from "../components/Post"
+import PaginationLinks from "../components/PaginationLinks"
 
 const postList = (props) => {
   const posts = props.data.allMarkdownRemark.edges
-  const { currentPage } = props.pageContext
+  const { currentPage, nrOfPages } = props.pageContext
 
   return (
     <Layout pageTitle={`Page: ${currentPage}`}>
@@ -22,6 +23,7 @@ const postList = (props) => {
           />
         ))
       }
+      <PaginationLinks currentPage={currentPage} nrOfPages={nrOfPages}/>
     </Layout>
   )
 }
