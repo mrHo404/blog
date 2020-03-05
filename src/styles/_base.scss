@@ -28,12 +28,18 @@ hr {
   background-image: linear-gradient(to bottom,  $dark-blue, $darkest-blue);
   border-bottom: 1px solid $darkest-blue;
   line-height: 1;
-  .dropdown-item{
+  .dropdown-item {
     &:hover {
       color: $lightest-blue;
-      background-color: $darkest-blue;
+      background-image: linear-gradient(to bottom,  $light-blue, $dark-blue);
     }
   }
+  /*.nav-link {
+    &:hover {
+      color: $lightest-blue;
+      background-image: linear-gradient(to bottom,  $light-blue, $dark-blue);
+    }
+  }*/
 }
 
 .navbar-light .navbar-nav .nav-link,

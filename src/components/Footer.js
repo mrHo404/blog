@@ -4,7 +4,6 @@ import SocialContact from "./../components/SocialContact/SocialContact";
 
 
 export default () => (
-  <React.Fragment>
     <footer>
       <div className='footer-gradient'>
         {PROFILES.map((PROFILE) => (
@@ -17,5 +16,4 @@ export default () => (
         </p>
       </div>
     </footer>
-  </React.Fragment>
 )
