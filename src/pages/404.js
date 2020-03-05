@@ -24,14 +24,14 @@ export default () => {
       <SEO title="404 - Not found" />
       <Card>
         <CardBody>
-          <CardTitle> Da ist wohl was schief gelaufen!</CardTitle>
+          <CardTitle style={{ fontFamily: "TitilliumBold" }}> Da ist wohl was schief gelaufen!</CardTitle>
           <CardSubtitle>
             Sorry diese Seite muss erst noch gebaut werden.
             <br />
             Wir löten so schnell wir können!
           </CardSubtitle>
-          <Img fluid={notFoundQuery.file.childImageSharp.fluid} />
-          <Link className=" btn btn-primary text-uppercase" to={"/"}>
+          <Img className='card-img' fluid={notFoundQuery.file.childImageSharp.fluid} />
+          <Link className=" btn btn-primary text-uppercase mt-3 w-100" to={"/"} >
             Zurück zur Hauptseite
           </Link>
         </CardBody>
