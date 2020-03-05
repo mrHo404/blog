@@ -25,12 +25,10 @@ hr {
 }
 .navbar,
 .dropdown-menu-right {
-  background-image: linear-gradient(to bottom,  $dark-blue, $darkest-blue);
-  border-bottom: 1px solid $darkest-blue;
+  background-image: linear-gradient(to top,  $dark-blue, $darkest-blue);
   line-height: 1;
   .dropdown-item {
     &:hover {
-      color: $lightest-blue;
       background-image: linear-gradient(to bottom,  $light-blue, $dark-blue);
     }
   }
