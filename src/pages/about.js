@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+export default () => (
   <Layout pageTitle="Wir Sind BMR!">
     <SEO title="Wir sind BMR!" />
     <div>
@@ -141,5 +141,3 @@ const AboutPage = () => (
     </div>
   </Layout>
 )
-
-export default AboutPage

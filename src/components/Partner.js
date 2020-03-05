@@ -1,6 +1,6 @@
 import React from "react"
 
-const Partner = props => {
+export default props => {
   const { title, img, link } = props.partners
   return (
     <a href={link} className="partner-background">
@@ -12,5 +12,3 @@ const Partner = props => {
     </a>
   )
 }
-
-export default Partner

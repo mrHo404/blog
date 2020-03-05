@@ -1,8 +1,7 @@
-import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu } from "reactstrap"
 
-const Header = (props) => {
+export default (props) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)
@@ -53,15 +52,5 @@ const Header = (props) => {
       </div>
     </Navbar>
   )
-}
-
-export default Header
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+export default () => (
   <Layout pageTitle='404 - Not Found'>
     <SEO title="404 - Not found" />
     <underConstruction>
@@ -20,5 +20,3 @@ const NotFoundPage = () => (
     </underConstruction>
   </Layout>
 )
-
-export default NotFoundPage

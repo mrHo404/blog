@@ -3,7 +3,7 @@ import PROFILES from "./../data/socialContacts";
 import SocialContact from "./../components/SocialContact/SocialContact";
 
 
-const Footer = () => (
+export default () => (
   <React.Fragment>
     <footer>
       <div className='footer-gradient'>
@@ -19,5 +19,3 @@ const Footer = () => (
     </footer>
   </React.Fragment>
 )
-
-export default Footer

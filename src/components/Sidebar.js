@@ -3,7 +3,7 @@ import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const Sidebar = ({ postAuthor, authorImageFluid }) => (
+export default ({ postAuthor, authorImageFluid }) => (
   <div>
     {postAuthor ? (
       <Card>
@@ -87,5 +87,3 @@ const sidebarQuery = graphql`
     }
   }
 `
-
-export default Sidebar

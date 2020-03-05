@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 let pilotsSorted = [[], [], [], [], [], []]
 
-function sortPilotArray() {
+const sortPilotArray = () => {
   if (pilotsSorted[0].length === 0) {
     PILOTS.map(PILOT => {
       switch (PILOT.rank) {
@@ -31,7 +31,7 @@ function sortPilotArray() {
   return null
 }
 
-function buildPilotsPerRank(rankArr) {
+const buildPilotsPerRank = rankArr => {
   return rankArr.length > 0 ? (
     <div key={rankArr[0].rank}>
       {rankArr[0].rank === RANKS_ENUM.FIVE ? (
@@ -54,17 +54,14 @@ function buildPilotsPerRank(rankArr) {
   ) : null
 }
 
-const Pilots = () => {
+export default () => {
   sortPilotArray()
   return (
-    <Layout pageTitle='Die BMR Mafia'>
+    <Layout pageTitle="Die BMR Mafia">
       <SEO title="BMR Piloten" />
       <div style={{ paddingBottom: 20 }}>
         {pilotsSorted.map(rankArr => buildPilotsPerRank(rankArr))}
       </div>
     </Layout>
-
   )
 }
-
-export default Pilots

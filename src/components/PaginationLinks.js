@@ -1,7 +1,7 @@
 import React from "react"
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap"
 
-const PaginationLinks = ({ currentPage, nrOfPages }) => {
+export default ({ currentPage, nrOfPages }) => {
   const isFirst = currentPage === 1
   const isLast = currentPage === nrOfPages
   const prevPage =
@@ -11,7 +11,7 @@ const PaginationLinks = ({ currentPage, nrOfPages }) => {
     <Pagination aria-label="Page navigation example">
       {isFirst ? (
         <PaginationItem disabled>
-          <PaginationLink previous/>
+          <PaginationLink previous />
         </PaginationItem>
       ) : (
         <PaginationItem>
@@ -35,7 +35,7 @@ const PaginationLinks = ({ currentPage, nrOfPages }) => {
       )}
       {isLast ? (
         <PaginationItem disabled>
-          <PaginationLink next/>
+          <PaginationLink next />
         </PaginationItem>
       ) : (
         <PaginationItem>
@@ -45,5 +45,3 @@ const PaginationLinks = ({ currentPage, nrOfPages }) => {
     </Pagination>
   )
 }
-
-export default PaginationLinks
