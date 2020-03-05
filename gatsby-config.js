@@ -16,6 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `pilotPics`,
+        path: `${__dirname}/src/images/pilotPics`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       },
@@ -31,7 +38,7 @@ module.exports = {
         background_color: `#00204a`,
         theme_color: `#00204a`,
         display: `minimal-ui`,
-        icon: `src/images/BMR_Logo_Icon_Colour1x.png`, // This path is relative to the root of the site.
+        icon: `src/assets/logos/BMR_Logo_Icon_Colour4x.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

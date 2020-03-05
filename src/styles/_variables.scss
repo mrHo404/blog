@@ -1,7 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+  font-family: TitilliumLight;
+  src: url(../assets/fonts/TitilliumWeb-Light.ttf);
+}
+@font-face {
+  font-family: TitilliumRegular;
+  src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: TitilliumBold;
+  src: url(../assets/fonts/TitilliumWeb-Bold.ttf);
+}
 
-$site-font: 'Raleway', sans-serif;
 
-$light-gray: rgb(240, 240, 240);
-$dark-gray: rgb(80, 80, 80);
-$white: white;
+$site-font: TitilliumLight, sans-serif;
+
+$lightest-blue: #d9faff;
+$light-blue: #00bbf0;
+$dark-blue: #005792;
+$darkest-blue: #00204a;
+$white: #f6f6f6;
+$primary: $dark-blue;
+$light: $lightest-blue;

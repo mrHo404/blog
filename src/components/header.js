@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from "reactstrap"
+import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu } from "reactstrap"
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,35 +16,39 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/team">Team</NavLink>
+              <NavLink href="/forum">Forum</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/tags">Tags</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/about">About</NavLink>
-            </NavItem>
-            {/*
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Wir Sind BMR!
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  <NavLink href="/about">Über Uns</NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
+                  <NavLink href="/pilots">Piloten</NavLink>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            */}
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Partner
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <NavLink href="/adelsried">SV. Adelsried</NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink href="/partners">BMR Buddies</NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="/imprint">Impressum</NavLink>
+            </NavItem>
+
           </Nav>
-          {/*<NavbarText>Simple Text</NavbarText>*/}
         </Collapse>
       </div>
     </Navbar>

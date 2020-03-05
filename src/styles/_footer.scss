@@ -1,37 +1,12 @@
-.site-footer {
-  background-color: $white;
-  margin-top: 20px;
-  padding: 10px;
-  text-align: center;
-
-  .footer-social-links {
+footer {
+  .footer-gradient {
+    background-image: linear-gradient(to top left, $dark-blue, $darkest-blue);;
+    margin-top: 20px;
     text-align: center;
-
-    ul.social-links-list {
-      li {
-        margin-right: 25px;
-        display: inline-block;
-
-        a {
-          color: $dark-gray;
-
-          &.instagram:hover {
-            color: #e95950;
-          }
-          &.facebook:hover {
-            color: rgb(66, 103, 178);
-          }
-          &.twitter:hover {
-            color: rgb(56, 161, 243);
-          }
-          &.google:hover {
-            color: rgb(221, 75, 57);
-          }
-          &.linkedin:hover {
-            color: rgb(0, 119, 181);
-          }
-        }
-      }
-    }
+    color: $light-blue;
+    padding: {
+      top: 35px;
+      bottom: 25px;
+    };
   }
 }

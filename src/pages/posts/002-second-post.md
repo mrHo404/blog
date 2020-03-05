@@ -2,7 +2,7 @@
 title: 'Second Post - HTML'
 date: '2020-02-19 18:01:00'
 author: 'Robert Stach'
-image: ../../images/Lipocalypse_Background.jpg
+image: postImages/Lipocalypse_Background.jpg
 tags:
 - tutorial
 ---

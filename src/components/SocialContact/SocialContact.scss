@@ -1,0 +1,17 @@
+.social-contact-icon {
+  display: inline-block;
+  padding-right: 40px;
+  padding-bottom: 35px;
+  margin: 5px;
+}
+
+.social-contact-icon img {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  transition: opacity 0.25s ease-in;
+}
+
+.social-contact-icon img.top:hover {
+  opacity: 0;
+}

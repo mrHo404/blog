@@ -1,0 +1,115 @@
+.pilot-background {
+  display: inline-block;
+  width: 750px;
+  word-break: keep-all;
+  margin-right: 10px;
+  //background-color: #005792;
+  background-image: linear-gradient(to top left, #00204a, #005792);
+  color: #d9faff;
+  padding: 10px 20px 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.button-small {
+  background-color: #00204a;
+  border-radius: 5px;
+  padding-left: 303px;
+  padding-right: 304px;
+  font-family: TitilliumBold, sans-serif;
+  color: #00bbf0;
+  border-color: #00204a;
+  text-decoration: none;
+  transition: background-color 0.2s linear,
+  color 0.2s linear;
+}
+
+.button-small:hover {
+  background-color: #00bbf0;
+  color: #d9faff;
+}
+
+.button-small:focus {
+  outline: none;
+}
+
+.text-expand-down {
+  overflow: hidden;
+  transition: all 2s ease;
+  animation: text-slide-down 0.5s ease;
+}
+
+.text-expand-up {
+  overflow: hidden;
+  animation: text-slide-up 0.125s ease;
+}
+
+.text-fade-out {
+  overflow: hidden;
+  animation: fade-out 1s ease;
+}
+
+.text-fade-in {
+  overflow: hidden;
+  animation: fade-in 1s ease;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+@keyframes text-slide-down {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 500px;
+  }
+}
+
+@keyframes text-slide-up {
+  from {
+    height: 500px;
+  }
+  to {
+    height: 50px;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100
+  }
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 100
+  }
+}
+
+@keyframes colour-fade-out {
+  from {
+    opacity: 100
+  }
+  to {
+    opacity: 0
+  }
+}
+
+@keyframes colour-fade-in {
+  from {
+    background-color: #00204a;
+    color: #00bbf0;
+  }
+  to {
+    background-color: #00bbf0;
+    color: #d9faff;
+  }
+}
+
+

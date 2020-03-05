@@ -2,7 +2,7 @@
 title: 'First Post - Introduction'
 date: '2020-02-19 18:00:00'
 author: 'Tin Ho'
-image: ../../images/Lipocalypse_Background.jpg
+image: postImages/Lipocalypse_Background.jpg
 tags: 
 - tutorial
 - design
