@@ -20,18 +20,23 @@ export default () => {
   `)
 
   return (
-    <Layout pageTitle="404 - Oh Nein!">
+    <Layout pageTitle="404 - OH NEIN!">
       <SEO title="404 - Not found" />
       <Card>
         <CardBody>
-          <CardTitle style={{ fontFamily: "TitilliumBold" }}> Da ist wohl was schief gelaufen!</CardTitle>
-          <CardSubtitle>
-            Sorry diese Seite muss erst noch gebaut werden.
+          <CardTitle className="text-uppercase mb-3">
+            <h1>Da ist wohl was schief gelaufen!</h1>
+          </CardTitle>
+          <CardSubtitle className="text-center mb-3">
+            <span>Sorry diese Seite muss erst noch gebaut werden.
             <br />
-            Wir löten so schnell wir können!
+              Wir löten so schnell wir können!</span>
           </CardSubtitle>
-          <Img className='card-img' fluid={notFoundQuery.file.childImageSharp.fluid} />
-          <Link className=" btn btn-primary text-uppercase mt-3 w-100" to={"/"} >
+          <Img
+            className="card-img"
+            fluid={notFoundQuery.file.childImageSharp.fluid}
+          />
+          <Link className=" btn btn-primary text-uppercase mt-3 w-100" to={"/"}>
             Zurück zur Hauptseite
           </Link>
         </CardBody>

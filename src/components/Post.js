@@ -28,7 +28,7 @@ export default ({ title, author, slug, date, body, tags, fluid }) => {
             </li>
           ))}
         </ul>
-        <Link to={slug} className='btn btn-outline-primary float-right'>Read more</Link>
+        <Link to={slug} className='btn btn-outline-primary float-right'>Weiterlesen...</Link>
       </CardBody>
     </Card>
   )

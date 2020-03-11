@@ -1,41 +1,48 @@
-body {
-  background-color: $white;
-}
 a {
   color: $dark-blue;
+  font-family: $site-font-semi-bold;
   &:hover {
     color: $light-blue;
     text-decoration: none;
   }
 }
+span {
+  font-family: $site-font-semi-bold-it;
+}
 body {
   font-family: $site-font;
   color: $darkest-blue;
+  background-color: $white;
 }
-h1, h2, h3, h4, h5, h6  {
+h1 {
   color: $darkest-blue;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   text-align: center;
-  font-family: TitilliumRegular, sans-serif;
+  font-family: $site-font-bold;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: {
+    top: 65px;
+  }
+  color: $darkest-blue;
+  font-family: $site-font-bold;
 }
 hr {
   background-color: $lightest-blue;
 }
 .navbar,
 .dropdown-menu-right {
-  background-image: linear-gradient(to top,  $dark-blue, $darkest-blue);
+  background-image: linear-gradient(to top, $dark-blue, $darkest-blue);
   line-height: 1;
   .dropdown-item {
     &:hover {
-      background-image: linear-gradient(to bottom,  $light-blue, $dark-blue);
+      background-image: linear-gradient(to bottom, $light-blue, $dark-blue);
     }
   }
-  /*.nav-link {
-    &:hover {
-      color: $lightest-blue;
-      background-image: linear-gradient(to bottom,  $light-blue, $dark-blue);
-    }
-  }*/
 }
 
 .navbar-light .navbar-nav .nav-link,

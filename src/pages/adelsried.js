@@ -35,16 +35,12 @@ export default () => (
               <a
                 href="https://www.sportverein-adelsried.de/"
                 className="mail-to"
-                style={{
-                  fontSize: "xx-large",
-                  fontFamily: "TitilliumBold",
-                }}
               >
                 www.Sportverein-Adelsried.de
               </a>
             </p>
           </div>
-          <hr style={{ backgroundColor: "#d9faff" }} />
+          <hr />
           <div>
             <h3>Abteilungsleiter:</h3>
             <p className="imprint-contact-info-contents">
@@ -55,7 +51,7 @@ export default () => (
                 Kneifl.Mic@web.de
               </a>
             </p>
-            <hr style={{ backgroundColor: "#d9faff" }} />
+            <hr />
             <h3>Stellvertreter:</h3>
             <p className="imprint-contact-info-contents">
               Ben
@@ -73,10 +69,10 @@ export default () => (
         </div>
         <div>
           <div>
-            <h1 style={{ textAlign: "left" }}>
+            <h1 >
               Drone Racing beim SV Adelsried
             </h1>
-            <h3 style={{ textAlign: "left" }}>
+            <h3 >
               Einmalig in Bayern - Die Abteilung Drone Racing
             </h3>
             <hr />
@@ -90,7 +86,7 @@ export default () => (
               Vereins in Adelsried statt.Lasst uns also der Welt zeigen, was
               Drone Racing ist und wie spannend dieser Sport sein kann.
             </p>
-            <h3 style={{ textAlign: "left" }}>
+            <h3 >
               Jeder ist Willkommen! Steigt ein beim SV Adelsried
             </h3>
             <hr />
@@ -101,12 +97,12 @@ export default () => (
               wir uns immer.
             </p>
           </div>
-          <h2 style={{ textAlign: "left" }}>Was ist geboten?</h2>
+          <h2 >Was ist geboten?</h2>
           <hr />
           <div>
             <ul className="bullet-list">
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Voll bewirtschaftetes Vereinsheim:{" "}
                 </span>
                 Jederzeit gutes Bier und leckeres Essen. Der SV Adelsried hat
@@ -114,14 +110,14 @@ export default () => (
                 begehrt.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Professioneller Fußballplatz:{" "}
                 </span>
                 Der 60m x 100m große Platz bietet ideale Voraussetzungen für
                 Racing.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Tracks mit Profi-Material:{" "}
                 </span>
                 Ein großer Vorrat an Track-material und Sicherheitsequipment
@@ -129,34 +125,34 @@ export default () => (
                 (Netze) gebaut werden.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Monatliche Rennen:{" "}
                 </span>
                 Wir werden monatlich Rennen veranstalten auf denen sich Piloten
                 aus allen Regionen / Gemeinschaften miteinander messen können.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Offizielles Vereinsgelände:{" "}
                 </span>
                 Keine lange Suche nach abgelegenen Geländen um Passanten nicht
                 zu Stören.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Gepflegter Platz:{" "}
                 </span>{" "}
                 Kein suchen von Coptern in Büschen und hohem Graß und dazu noch
                 ein geringeres Risiko eure Komponenten zu zerstören.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>BMR: </span>Eine
+                <span >BMR: </span>Eine
                 freundliche und offene Atmosphäre mit erfahrenen Leuten.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>Notdurft: </span>
+                <span >Notdurft: </span>
                 Strom, Toiletten und Duschen
-                <span style={{ fontFamily: "TitilliumBold" }}>. . . </span> In
+                <span >. . . </span> In
                 dieser Reihenfolge. <FaRegLaughWink />
               </li>
             </ul>
@@ -185,7 +181,7 @@ export default () => (
           <h2>BMR und SV Adelsried-Drone Racing</h2>
           <hr />
           <p className="imprint-disclaimer">
-            <span style={{ fontFamily: "TitilliumBold" }}>
+            <span >
               BMR Bleibt natürlich BMR:{" "}
             </span>
             Eine Interessensgemeinschaft für FPV Piloten in ganz Bayern,

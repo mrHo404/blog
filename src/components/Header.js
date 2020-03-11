@@ -12,7 +12,7 @@ import {
   DropdownItem,
   DropdownMenu,
 } from "reactstrap"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 export default props => {
@@ -54,7 +54,7 @@ export default props => {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Wir Sind BMR!
+                  Wir sind BMR!
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
@@ -62,6 +62,9 @@ export default props => {
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink href="/pilots">Piloten</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/404">Media</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -86,13 +89,13 @@ export default props => {
         </div>
       </Navbar>
       <div className="header-box">
-        <Img
-          fluid={headerQuery.headerImg.childImageSharp.fluid}
-        />
-          <div className="w-50 mx-auto card-img-overlay">
-            <Img fluid={headerQuery.logoImg.childImageSharp.fluid} />
-            <h2 className='sub-title-line'> Das FPV Portal für München und Bayern</h2>
-          </div>
+        <Img fluid={headerQuery.headerImg.childImageSharp.fluid} />
+        <Link to={"/about"} className="w-50 mx-auto card-img-overlay">
+          <Img fluid={headerQuery.logoImg.childImageSharp.fluid} />
+          <h1 className="sub-title-line">
+            Das FPV Portal für München und Bayern
+          </h1>
+        </Link>
       </div>
     </header>
   )

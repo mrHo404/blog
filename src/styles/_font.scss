@@ -1,0 +1,18 @@
+@import './variables';
+
+@font-face {
+  font-family: 'TitilliumLight';
+  src: url($font-file-path) format('truetype');
+}
+@font-face {
+  font-family: 'TitilliumBold';
+  src: url($font-file-bold-path) format('truetype');
+}
+@font-face {
+  font-family: 'TitilliumSemiBold';
+  src: url($site-font-semi-bold) format('truetype');
+}
+@font-face {
+  font-family: 'TitilliumSemiBoldItalic';
+  src: url($font-file-semi-bold-it-path) format('truetype');
+}

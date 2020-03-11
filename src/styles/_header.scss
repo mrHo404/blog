@@ -1,9 +1,11 @@
 header {
+  margin-bottom: 35px;
+
   .header-box {
     position: relative;
   }
   .sub-title-line {
-    font-family: TitilliumBold sans-serif;
+    text-align: center;
     color: $white;
   }
 }

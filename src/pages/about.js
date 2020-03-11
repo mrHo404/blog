@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export default () => (
-  <Layout pageTitle="Wir Sind BMR!">
+  <Layout pageTitle="Wir sind BMR!">
     <SEO title="Wir sind BMR!" />
     <div>
       <div className="imprint">
@@ -11,7 +11,7 @@ export default () => (
           <div>
             <h3>Sei auch Du dabei und flieg mit uns!</h3>
             <hr />
-            <p className="imprint-disclaimer">
+            <p>
               Wir sind eine wachsende Gemeinde von FPV Piloten aus dem Raum
               München die sich im FPV-Racing-Forum.de kennengelernt haben. Seit
               2016 gab es zahlreiche gemeinsame Flugtreffen an vielen
@@ -25,7 +25,7 @@ export default () => (
             </p>
             <h3>Jeder ist Willkommen!</h3>
             <hr />
-            <p className="imprint-disclaimer">
+            <p>
               Ob jung, alt, Anfänger, Fortgeschrittener, Profi, Freestyler oder
               Racer. Über neue Gesichter auf Flugtreffen freuen wir uns immer.
               Wenn ihr also lust habt mit netten Leuten aus der Region zu
@@ -42,15 +42,15 @@ export default () => (
           Ein Paar wichtige Regeln gibt es allerdings bevor es losgehen kann.
         </h2>
         <hr />
-        <p className="imprint-disclaimer">
+        <p>
           <h5>
             Bevor ihr im freien fliegen geht, oder zu einem Flugtreffen
             mitkommen wollt sind ein paar sehr wichtige Punkte zu erfüllen:
           </h5>
           <div>
-            <ul className="bullet-list">
+            <ul>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Die Drohnenverordnung
                 </span>{" "}
                 und die damit verbundene Gesetzgebung muss eingehalten werden.
@@ -58,7 +58,7 @@ export default () => (
                 offiziellen Informationen gerne weiter.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Eine Haftpflichtversicherung.
                 </span>{" "}
                 Unfälle und Sachschäden werden durch umsichtiges Fliegen
@@ -66,12 +66,12 @@ export default () => (
                 und unumgänglich.
               </li>
               <li>
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   Informiert euch ob ihr fliegen dürft.{" "}
                 </span>
                 Flugtreffen finden nur an Orten statt an denen wir legal fliegen
                 dürfen und
-                <span style={{ fontFamily: "TitilliumBold" }}>
+                <span >
                   {" "}
                   niemanden damit stören.
                 </span>{" "}
@@ -83,14 +83,14 @@ export default () => (
           </div>
         </p>
         <h5>Was erwartet mich?</h5>
-        <p className="imprint-disclaimer">
+        <p>
           Erstmal viel Spass, coole Flugtreffen und nette Leute. Wir fliegen
           relativ häufig in immer wechselnder zusammenstellung. Bei guten Wetter
           findet man eigendlich immer wen um gemeinsam zu fliegen und auch in
           größeren Gruppen geht häufig was zusammen.
         </p>
         <h5>Alle Bayer unter einem Dach?</h5>
-        <p className="imprint-disclaimer">
+        <p>
           Das ist vielleicht ein gewagtes Ziel aber zumindest möchten wir hier
           mit diesem Portal einen Ort schaffen an dem alle Quad Piloten
           miteinander kommunizieren können. Unabhängig davon ob sie Facebook
@@ -107,9 +107,9 @@ export default () => (
           Sicherheit spielt hier eine sehr große Rolle:
         </p>
         <div>
-          <ul className="bullet-list">
+          <ul>
             <li>
-              <span style={{ fontFamily: "TitilliumBold" }}>
+              <span >
                 Unwissen schützt nicht vor Schaden!{" "}
               </span>
               Flugkenntnisse und technisches know-how sind wichtig. Es ist sehr
@@ -118,7 +118,7 @@ export default () => (
               Wohnzimmerkoptern und Simulatoren zu üben.
             </li>
             <li>
-              <span style={{ fontFamily: "TitilliumBold" }}>Stay Safe!</span>{" "}
+              <span >Stay Safe!</span>{" "}
               Passt eure und unsere Gesundheit auf. Fliegt nicht zu nah in die
               Zone in der wir aufbauen, kündigt das aktivieren eines Kopters
               immer erst an. Bevor wir fliegen werden frequenzen verteilt und

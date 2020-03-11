@@ -45,7 +45,7 @@ const buildPilotsPerRank = rankArr => {
       {rankArr[0].rank === RANKS_ENUM.ONE ? (
         <h2>{rankArr[0].rank}</h2>
       ) : (
-        <h3 style={{ paddingTop: 15 }}>{rankArr[0].rank}</h3>
+        <h3>{rankArr[0].rank}</h3>
       )}
       {rankArr.map(pilot => (
         <Pilot key={pilot.id} profile={pilot} />
