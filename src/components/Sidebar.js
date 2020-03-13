@@ -3,61 +3,74 @@ import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-export default ({ postAuthor, authorImageFluid }) => (
+export default ({ authorImageFluid, postAuthor }) => (
   <div>
     {postAuthor ? (
-      <Card>
-        <Img className="card-img-top" fluid={authorImageFluid} />
-        <CardBody>
-          <CardTitle className="text-center text-uppercase mb-3">
-            {postAuthor.name}
-          </CardTitle>
-          <CardText>{postAuthor.bio}</CardText>
-        </CardBody>
-      </Card>
+      <PostAuthorCard
+        authorImageFluid={authorImageFluid}
+        postAuthor={postAuthor}
+      />
     ) : null}
-    <Card>
-      <CardBody>
-        <CardTitle className="text-center text-uppercase">Werbung</CardTitle>
-        <img
-          src="http://via.placeholder.com/320x200"
-          alt="Advert"
-          style={{ width: "100%" }}
-        />
-      </CardBody>
-    </Card>
-    <Card>
-      <CardBody>
-        <CardTitle className="text-center text-uppercase mb-3">
-          Neuigkeiten
-        </CardTitle>
-        <StaticQuery
-          query={sidebarQuery}
-          render={data => (
-            <div>
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Card key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <Img
-                      className="card-img-top"
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                    />
-                  </Link>
-                  <CardBody>
-                    <CardTitle>
-                      <Link to={node.fields.slug}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </CardTitle>
-                  </CardBody>
-                </Card>
-              ))}
-            </div>
-          )}
-        />
-      </CardBody>
-    </Card>
+    <AdvertisementCard />
+    <RecentPostsCard />
   </div>
+)
+
+export const PostAuthorCard = (authorImageFluid, postAuthor) => (
+  <Card>
+    <Img className="card-img-top" fluid={authorImageFluid} />
+    <CardBody>
+      <CardTitle className="text-center text-uppercase mb-3">
+        {postAuthor.name}
+      </CardTitle>
+      <CardText>{postAuthor.bio}</CardText>
+    </CardBody>
+  </Card>
+)
+
+export const AdvertisementCard = () => (
+  <Card>
+    <CardBody>
+      <CardTitle className="text-center text-uppercase">Werbung</CardTitle>
+      <img
+        src="http://via.placeholder.com/320x200"
+        alt="Advert"
+        style={{ width: "100%" }}
+      />
+    </CardBody>
+  </Card>
+)
+
+export const RecentPostsCard = () => (
+  <Card>
+    <CardBody>
+      <CardTitle className="text-center text-uppercase mb-3">
+        Neuigkeiten
+      </CardTitle>
+      <StaticQuery
+        query={sidebarQuery}
+        render={data => (
+          <div>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <Card key={node.id}>
+                <Link to={node.fields.slug}>
+                  <Img
+                    className="card-img-top"
+                    fluid={node.frontmatter.image.childImageSharp.fluid}
+                  />
+                </Link>
+                <CardBody>
+                  <CardTitle>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                  </CardTitle>
+                </CardBody>
+              </Card>
+            ))}
+          </div>
+        )}
+      />
+    </CardBody>
+  </Card>
 )
 
 const sidebarQuery = graphql`
