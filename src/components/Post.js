@@ -10,7 +10,9 @@ export default ({ title, author, slug, date, body, tags, fluid }) => {
       <Link to={slug}><Img className='card-img-top' fluid={fluid}/></Link>
       <CardBody>
         <CardTitle>
-          <Link to={slug}>{title}</Link>
+          <h4>
+            <Link to={slug}>{title}</Link>
+          </h4>
         </CardTitle>
         <CardSubtitle>
           <span className='text-info'>{date}</span> von {" "}

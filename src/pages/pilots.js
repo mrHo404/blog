@@ -4,6 +4,7 @@ import Pilot from "./../components/Pilot/Pilot"
 import { RANKS_ENUM } from "./../data/enums"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 
 let pilotsSorted = [[], [], [], [], [], []]
 
@@ -33,24 +34,34 @@ const sortPilotArray = () => {
 
 const buildPilotsPerRank = rankArr => {
   return rankArr.length > 0 ? (
-    <div key={rankArr[0].rank}>
-      {rankArr[0].rank === RANKS_ENUM.FIVE ? (
-        <React.Fragment>
-          <hr />
-          <hr />
-          <h1>Co-Cospiratores</h1>
-        </React.Fragment>
-      ) : null}
-      <hr />
-      {rankArr[0].rank === RANKS_ENUM.ONE ? (
-        <h2>{rankArr[0].rank}</h2>
-      ) : (
-        <h3>{rankArr[0].rank}</h3>
-      )}
-      {rankArr.map(pilot => (
-        <Pilot key={pilot.id} profile={pilot} />
-      ))}
-    </div>
+    <Card>
+      <CardBody>
+        <div key={rankArr[0].rank}>
+          {rankArr[0].rank === RANKS_ENUM.FIVE ||
+          rankArr[0].rank === RANKS_ENUM.SIX ? (
+            <React.Fragment>
+              <h1>Co-Cospiratores:</h1>
+            </React.Fragment>
+          ) : null}
+          {rankArr[0].rank === RANKS_ENUM.ONE ? (
+            <CardHeader>
+              <CardTitle>
+                <h1>{rankArr[0].rank}</h1>
+              </CardTitle>
+            </CardHeader>
+          ) : (
+            <CardHeader>
+              <CardTitle>
+                <h3>{rankArr[0].rank}</h3>
+              </CardTitle>
+            </CardHeader>
+          )}
+          {rankArr.map(pilot => (
+            <Pilot key={pilot.id} profile={pilot} />
+          ))}
+        </div>
+      </CardBody>
+    </Card>
   ) : null
 }
 
@@ -59,9 +70,7 @@ export default () => {
   return (
     <Layout pageTitle="Die BMR Mafia">
       <SEO title="BMR Piloten" />
-      <div style={{ paddingBottom: 20 }}>
-        {pilotsSorted.map(rankArr => buildPilotsPerRank(rankArr))}
-      </div>
+      {pilotsSorted.map(rankArr => buildPilotsPerRank(rankArr))}
     </Layout>
   )
 }

@@ -7,8 +7,8 @@ import { Card } from "reactstrap"
 export default () => (
   <Layout pageTitle="Forum">
     <SEO title="Forum" />
-    <Card>
-      <div className="embed-responsive embed-responsive-16by9">
+    <Card className="h-100">
+      <div className="embed-responsive h-100">
         <Iframe
           className="embed-responsive-item"
           scrolling="no"

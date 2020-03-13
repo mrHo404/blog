@@ -12,34 +12,13 @@ import {
   DropdownItem,
   DropdownMenu,
 } from "reactstrap"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 export default props => {
   const [isOpen, setIsOpen] = useState(false)
-
   const toggle = () => setIsOpen(!isOpen)
-
-  const headerQuery = useStaticQuery(graphql`
-    query headerQuery {
-      headerImg: file(relativePath: { eq: "Header.png" }) {
-        id
-        childImageSharp {
-          fluid(maxWidth: 5760) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      logoImg: file(relativePath: { eq: "BMR_Logo.png" }) {
-        id
-        childImageSharp {
-          fluid(maxWidth: 900) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  console.log("props", props)
 
   return (
     <header>
@@ -88,15 +67,41 @@ export default props => {
           </Collapse>
         </div>
       </Navbar>
-      <div className="header-box">
-        <Img fluid={headerQuery.headerImg.childImageSharp.fluid} />
-        <Link to={"/about"} className="w-50 mx-auto card-img-overlay">
-          <Img fluid={headerQuery.logoImg.childImageSharp.fluid} />
-          <h1 className="sub-title-line">
-            Das FPV Portal für München und Bayern
-          </h1>
-        </Link>
-      </div>
+      <StaticQuery
+        query={headerQuery}
+        render={data => (
+          <div className="header-box">
+            <Img fluid={data.headerImg.childImageSharp.fluid} />
+            <Link to={"/about"} className="w-50 mx-auto card-img-overlay">
+              <Img fluid={data.logoImg.childImageSharp.fluid} />
+              <h1 className="sub-title-line">
+                Das FPV Portal für München und Bayern
+              </h1>
+            </Link>
+          </div>
+        )}
+      />
     </header>
   )
 }
+
+export const headerQuery = graphql`
+  query headerQuery {
+    headerImg: file(relativePath: { eq: "Header.png" }) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 5760) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logoImg: file(relativePath: { eq: "BMR_Logo.png" }) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

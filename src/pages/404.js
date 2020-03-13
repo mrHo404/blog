@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { Card, CardBody, CardTitle, CardSubtitle } from "reactstrap"
+import { Card, CardBody, CardTitle, CardSubtitle, CardHeader } from "reactstrap"
 import SEO from "../components/seo"
 
 export default () => {
@@ -24,14 +24,16 @@ export default () => {
       <SEO title="404 - Not found" />
       <Card>
         <CardBody>
-          <CardTitle className="text-uppercase mb-3">
-            <h1>Da ist wohl was schief gelaufen!</h1>
-          </CardTitle>
-          <CardSubtitle className="text-center mb-3">
+          <CardHeader>
+            <CardTitle className="text-uppercase mb-3">
+              <h1>Da ist wohl was schief gelaufen!</h1>
+            </CardTitle>
+            <CardSubtitle className="text-center mb-3">
             <span>Sorry diese Seite muss erst noch gebaut werden.
             <br />
               Wir löten so schnell wir können!</span>
-          </CardSubtitle>
+            </CardSubtitle>
+          </CardHeader>
           <Img
             className="card-img"
             fluid={notFoundQuery.file.childImageSharp.fluid}

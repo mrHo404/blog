@@ -1,6 +1,10 @@
 .card {
   margin-bottom: 30px;
   background-color: $white;
+  h2,
+  h3 {
+    padding-left: 20px;
+  }
 }
 ul.post-tags {
   padding: 0;
@@ -9,5 +13,24 @@ ul.post-tags {
 
   li {
     margin-right: 10px;
+  }
+}
+.bullet-list {
+  list-style-type: circle;
+  padding-left: 25px;
+}
+.card-header {
+  margin-bottom: 30px;
+  background-image: linear-gradient(to bottom right, $white, $lightest-blue);
+  border-bottom-color: $lightest-blue;
+  .card-title {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $dark-blue;
+      padding-left: 0;
+    }
   }
 }
