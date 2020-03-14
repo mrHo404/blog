@@ -4,7 +4,7 @@ import { Badge, Card, CardBody, CardSubtitle, CardText, CardTitle } from "reacts
 import Img from "gatsby-image"
 import { slugify } from "./../utils/util"
 
-export default ({ title, author, slug, date, body, tags, fluid }) => {
+export default ({ title, slug, date, body, tags, fluid }) => {
   return (
     <Card>
       <Link to={slug}><Img className='card-img-top' fluid={fluid}/></Link>
@@ -15,8 +15,7 @@ export default ({ title, author, slug, date, body, tags, fluid }) => {
           </h4>
         </CardTitle>
         <CardSubtitle>
-          <span className='text-info'>{date}</span> von {" "}
-          <span className='text-info'>{author}</span>
+          <span className='text-info'>{date}</span>
         </CardSubtitle>
         <CardText>
           {body}

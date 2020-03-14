@@ -154,17 +154,17 @@ export default ({ data }) => (
         <hr />
         <p>
           Mitglieder können natürlich all die oben genannten Vorteile in vollem
-          Umfang nutzen und auch alle anderen Vorteile des Vereins (Klick).
-          Checkt ab ob der Platz frei ist und trainiert. (Ansprechpartner:
-          Michael Kneifl). Gerade wenn ihr aus der Region kommt lohnt es sich
-          besonders, denn ihr habt ein neues Zuhause für Drone Racing gefunden.
-          Auf den monatlichen Races sind natürlich alle Piloten eingeladen auch
-          Nichtmitglieder. Hier geht es ja schließlich darum das sich ALLE
-          Piloten von Überall gegeneinander messen können und im fairen
-          Wettstreit gegeneinander antreten und miteinander trainieren. Nur
-          müssen wir natürlich für Nichtmitglieder eine kleine Gebühr verlangen
-          wenn sie an den monatlichen Rennen teilnehmen wollen oder mal mit
-          trainieren. Es lohnt sich also Mitglied zu werden.
+          Umfang nutzen und auch alle anderen Vorteile des Vereins. Checkt ab ob
+          der Platz frei ist und trainiert. Gerade wenn ihr aus
+          der Region kommt lohnt es sich besonders, denn ihr habt ein neues
+          Zuhause für Drone Racing gefunden. Auf den monatlichen Races sind
+          natürlich alle Piloten eingeladen auch Nichtmitglieder. Hier geht es
+          ja schließlich darum das sich ALLE Piloten von Überall gegeneinander
+          messen können und im fairen Wettstreit gegeneinander antreten und
+          miteinander trainieren. Nur müssen wir natürlich für Nichtmitglieder
+          eine kleine Gebühr verlangen wenn sie an den monatlichen Rennen
+          teilnehmen wollen oder mal mit trainieren. Es lohnt sich also Mitglied
+          zu werden.
         </p>
         <h3>BMR und SV Adelsried-Drone Racing</h3>
         <hr />

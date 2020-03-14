@@ -24,7 +24,6 @@ const IndexPage = () => {
                 <Post
                   key={node.id}
                   title={node.frontmatter.title}
-                  author={node.frontmatter.author}
                   date={node.frontmatter.date}
                   slug={node.fields.slug}
                   body={node.excerpt}

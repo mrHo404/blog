@@ -18,7 +18,6 @@ exports.createPages = ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const templates = {
     singlePost: path.resolve("src/templates/single-post.js"),
-    tagsPage: path.resolve("src/templates/tags-page.js"),
     tagPosts: path.resolve("src/templates/tag-posts.js"),
     postList: path.resolve("src/templates/post-list.js")
   }
@@ -76,7 +75,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
     })
     tags = _.uniq(tags)
 
-    //create Tags page
+   /* //create Tags page
     createPage({
       path: `/tags/`,
       component: templates.tagsPage,
@@ -84,7 +83,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
         tags,
         tagPostCounts
       }
-    })
+    })*/
 
     //create Tag Post Pages
     tags.forEach(tag =>{

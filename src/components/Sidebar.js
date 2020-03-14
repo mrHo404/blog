@@ -1,7 +1,8 @@
 import React from "react"
-import { Card, CardBody, CardText, CardTitle } from "reactstrap"
+import { Badge, Button, Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { slugify } from "../utils/util"
 
 export default ({ authorImageFluid, postAuthor }) => (
   <div>
@@ -73,6 +74,23 @@ export const RecentPostsCard = () => (
   </Card>
 )
 
+export const TagsSidebarCard = ({pageContext}) => (
+  <Card>
+    <CardBody>
+      <CardTitle>Tags</CardTitle>
+      <ul>
+        {pageContext.tags.map(tag => (
+          <li key={tag} style={{ marginBottom: "10px" }}>
+            <Button color="primary" href={`/tag/${slugify(tag)}`}>
+              {tag} <Badge color="light">{pageContext.tagPostCounts[tag]}</Badge>
+            </Button>
+          </li>
+        ))}
+      </ul>
+    </CardBody>
+  </Card>
+)
+
 const sidebarQuery = graphql`
   query sidebarQuery {
     allMarkdownRemark(
@@ -84,6 +102,7 @@ const sidebarQuery = graphql`
           id
           frontmatter {
             title
+            tags
             image {
               childImageSharp {
                 fluid(maxWidth: 300) {
