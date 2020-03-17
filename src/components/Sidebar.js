@@ -3,6 +3,7 @@ import { Badge, Button, Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { slugify } from "../utils/util"
+import SidebarTags from "./SidebarTags"
 
 export default ({ authorImageFluid, postAuthor }) => (
   <div>
@@ -14,6 +15,7 @@ export default ({ authorImageFluid, postAuthor }) => (
     ) : null}
     <AdvertisementCard />
     <RecentPostsCard />
+    <SidebarTags/>
   </div>
 )
 
@@ -64,29 +66,21 @@ export const RecentPostsCard = () => (
                   <CardTitle>
                     <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                   </CardTitle>
+                  <ul>
+                    {node.frontmatter.tags.map((tag) => (
+                      <li key={tag}>
+                        <Link to={`/tag/${slugify(tag)}`}>
+                          <Badge color='primary' className='text-uppercase'>{tag}</Badge>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </CardBody>
               </Card>
             ))}
           </div>
         )}
       />
-    </CardBody>
-  </Card>
-)
-
-export const TagsSidebarCard = ({pageContext}) => (
-  <Card>
-    <CardBody>
-      <CardTitle>Tags</CardTitle>
-      <ul>
-        {pageContext.tags.map(tag => (
-          <li key={tag} style={{ marginBottom: "10px" }}>
-            <Button color="primary" href={`/tag/${slugify(tag)}`}>
-              {tag} <Badge color="light">{pageContext.tagPostCounts[tag]}</Badge>
-            </Button>
-          </li>
-        ))}
-      </ul>
     </CardBody>
   </Card>
 )

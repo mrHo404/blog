@@ -47,8 +47,8 @@ exports.createPages = ({ graphql, actions, reporter }) => {
 
     //create single blog pages
     posts.forEach(({ node }) => {
-      const author = authors.find(author => author.name === node.frontmatter.author)
-      const imageUrl = author ? author.imageUrl : ""
+      //const author = authors.find(author => author.name === node.frontmatter.author)
+      //const imageUrl = author ? author.imageUrl : ""
       createPage({
         path: `${node.fields.slug}`,
         component: templates.singlePost,
@@ -56,7 +56,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           //Passing slug as path
           slug: node.fields.slug,
           //FindAuthour imageUrl and pass it to single-post template
-          imageUrl: imageUrl,
+          //imageUrl: imageUrl,
         },
       })
     })
@@ -96,7 +96,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
       })
     })
 
-    const postsPerPage = 2
+    const postsPerPage = 8
     const nrOfPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({length: nrOfPages}).forEach((_, index) => {

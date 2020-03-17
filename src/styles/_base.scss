@@ -56,3 +56,14 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.badge {
+  font-family: $site-font;
+  color: $lightest-blue;
+  background-color: $dark-blue;
+  &:hover {
+    font-family: $site-font-bold;
+    color: $darkest-blue;
+    background-color: $lightest-blue;
+  }
+}

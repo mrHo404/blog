@@ -25,7 +25,7 @@ const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => {
           }
         }
       }
-    `,
+    `
   )
 
   return (

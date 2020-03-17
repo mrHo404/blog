@@ -18,7 +18,6 @@ import Img from "gatsby-image"
 export default props => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
-  console.log("props", props)
 
   return (
     <header>

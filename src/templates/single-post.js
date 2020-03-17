@@ -71,7 +71,7 @@ const SinglePost = ({ data, pageContext }) => {
 }
 
 export const postQuery = graphql`
-  query blogPostBySlug($slug: String!, $imageUrl: String!){
+  query blogPostBySlug($slug: String!){
     markdownRemark(fields: { slug: { eq: $slug }}){
       id
       html
@@ -88,13 +88,6 @@ export const postQuery = graphql`
           }
         }
       }  
-    }
-    file(relativePath: { eq: $imageUrl}){
-      childImageSharp{
-        fluid(maxWidth: 300){
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
   }
 `
