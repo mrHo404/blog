@@ -45,9 +45,9 @@ Alles ist vergänglich. Dieses Sprichwort hat wohl in diesem Hobby größere Tra
 
 Als erstes möchten wir sagen, dass es sich hier keinesfalls um unsere absoluten Empfehlungen handelt und Selbstbastler werden hier auch noch nicht beachtet. Mit  kleinen “TinyWhoop” Coptern geht es ab ca. €150-€200 schon los (inkl. Fernbedienung, Ladegerät u. Brille), mit denen du bereits richtig viel Spaß haben kannst. Das ist günstiger als jede Spielekonsole, oder 39 Döner und du tust deiner Mama einen riesigen Gefallen und bist an der frischen Luft. Hinzu kommt, dass schon ab der nächsten Klasse die meisten Teile leicht übernommen werden können und so die Copter mit deinem Können wachsen. Allgemein hast du für unter €700 schon eine Ausrüstung, mit der du bei jedem Wettbewerb bereits gut vorne mitmischen kannst.
 
-<a href="https://shop.rc-hangar15.de/BetaFPV-65-PRO2-2S-Brushless-Whoop-RTF-Set-FrSky">BetaFPV 65 PRO2 2S Brushless Whoop RTF Set</a>
+<a href="https://shop.rc-hangar15.de/BetaFPV-65-PRO2-2S-Brushless-Whoop-RTF-Set-FrSky" target="_blank" rel="noopener noreferrer">BetaFPV 65 PRO2 2S Brushless Whoop RTF Set</a>
 
-<a href="https://fpvcopter.de/humquad-hx100-fpv-racer-2-4s-frsky">HumQuad HX100 FPV Racer 2-4S Frsky</a>
+<a href="https://fpvcopter.de/humquad-hx100-fpv-racer-2-4s-frsky" target="_blank" rel="noopener noreferrer">HumQuad HX100 FPV Racer 2-4S Frsky</a>
 
 <h6>Kann das andere Leute bespannen?</h6>
 

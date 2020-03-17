@@ -1,6 +1,5 @@
 const { slugify } = require("./src/utils/util")
 const path = require("path")
-const authors = require("./src/utils/authors")
 const _ = require("lodash")
 
 exports.onCreateNode = ({ node, actions }) => {
@@ -74,6 +73,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
       tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
     })
     tags = _.uniq(tags)
+    tags = _.orderBy(tags)
 
    /* //create Tags page
     createPage({

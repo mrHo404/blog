@@ -6,7 +6,6 @@ import PaginationLinks from "../components/PaginationLinks"
 
 const postList = props => {
   const posts = props.data.allMarkdownRemark.edges
-
   const { currentPage, nrOfPages } = props.pageContext
 
   return (
@@ -38,6 +37,7 @@ export const postListQuery = graphql`
         node {
           id
           frontmatter {
+          tags
             title
             date(formatString: "dddd, Do MMM YYYY", locale: "de")
             image {

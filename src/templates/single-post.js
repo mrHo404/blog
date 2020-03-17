@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import { slugify } from "./../utils/util"
 import Layout from "./../components/layout"
 import authors from "./../utils/authors"
-import { faFacebookF, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { DiscussionEmbed } from "disqus-react"
 
@@ -30,7 +30,8 @@ const SinglePost = ({ data, pageContext }) => {
         <Img className='card-img-top' fluid={post.image.childImageSharp.fluid}/>
         <CardBody>
           <CardSubtitle>
-            <span className='text-info'>{post.date}</span>
+            <span className='text-info'>{post.date}</span> von {" "}
+            <span className='text-info'>{post.author}</span>
           </CardSubtitle>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}/>
           <ul className='post-tags'>
@@ -45,7 +46,7 @@ const SinglePost = ({ data, pageContext }) => {
         </CardBody>
       </Card>
       <h3 className='text-center'>
-        Share this post!
+        Teile diesen Post
       </h3>
       <div className='text-center social-share-links'>
         <ul>
@@ -57,11 +58,6 @@ const SinglePost = ({ data, pageContext }) => {
             href={"https://twitter.com/share?url=" + baseUrl + pageContext.slug + "&text=" + post.title + "&via" + TWITTER_HANDLE}
             className='twitter' target='_blank' rel='noopener noreferrer'>
             <FontAwesomeIcon icon={faTwitter} className='fab fa-2x'/></a>
-          </li>
-          <li><a
-            href={"https://www.linkedin/shareArticle?url=" + baseUrl + pageContext.slug}
-            className='linkedin' target='_blank' rel='noopener noreferrer'>
-            <FontAwesomeIcon icon={faLinkedin} className='fab fa-2x'/></a>
           </li>
         </ul>
       </div>

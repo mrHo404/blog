@@ -16,7 +16,6 @@ export default () => {
             query={tagsQuery}
             render={data => {
               const tagsWithCounts = getAllTagsWithCounts(data)
-              console.log("tagsWithCounts", tagsWithCounts)
               return tagsWithCounts.tag.map(tag => (
                 <li key={tag}>
                   <Link
@@ -52,8 +51,9 @@ const getAllTagsWithCounts = data => {
   tags.forEach(tag => {
     tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
   })
-
-  return { tag: _.uniq(tags), count: tagPostCounts }
+  tags = _.uniq(tags)
+  tags = _.orderBy(tags)
+  return { tag: tags, count: tagPostCounts }
 }
 
 const tagsQuery = graphql`

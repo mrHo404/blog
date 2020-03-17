@@ -1,8 +1,7 @@
 import React from "react"
-import { Badge, Button, Card, CardBody, CardText, CardTitle } from "reactstrap"
+import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { slugify } from "../utils/util"
 import SidebarTags from "./SidebarTags"
 
 export default ({ authorImageFluid, postAuthor }) => (
@@ -66,7 +65,7 @@ export const RecentPostsCard = () => (
                   <CardTitle>
                     <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                   </CardTitle>
-                  <ul>
+                 {/* <ul>
                     {node.frontmatter.tags.map((tag) => (
                       <li key={tag}>
                         <Link to={`/tag/${slugify(tag)}`}>
@@ -74,7 +73,7 @@ export const RecentPostsCard = () => (
                         </Link>
                       </li>
                     ))}
-                  </ul>
+                  </ul>*/}
                 </CardBody>
               </Card>
             ))}

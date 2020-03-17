@@ -20,7 +20,7 @@ export default props => (
         Flugstil: {props.profile.flightStyle}
         <br />
         {props.profile.multiGpURL !== "" ? (
-          <a href={props.profile.multiGpURL}>MultiGP Profil</a>
+          <a href={props.profile.multiGpURL} target="_blank" rel="noopener noreferrer">MultiGP Profil</a>
         ) : null}
       </p>
       <Equipment equipment={props.profile.equipment} />
