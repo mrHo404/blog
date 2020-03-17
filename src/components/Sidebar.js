@@ -12,9 +12,9 @@ export default ({ authorImageFluid, postAuthor }) => (
         postAuthor={postAuthor}
       />
     ) : null}
+    <SidebarTags/>
     <AdvertisementCard />
     <RecentPostsCard />
-    <SidebarTags/>
   </div>
 )
 
@@ -98,7 +98,7 @@ const sidebarQuery = graphql`
             tags
             image {
               childImageSharp {
-                fluid(maxWidth: 300) {
+                fluid(maxWidth: 300 maxHeight: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }
