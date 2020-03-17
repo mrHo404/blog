@@ -70,7 +70,7 @@ export default props => {
       <StaticQuery
         query={headerQuery}
         render={data => (
-          <div className="header-box">
+          <React.Fragment>
             <Img fluid={data.headerImg.childImageSharp.fluid} />
             <Link to={"/about"} className="w-50 mx-auto card-img-overlay">
               <Img fluid={data.logoImg.childImageSharp.fluid} />
@@ -78,7 +78,7 @@ export default props => {
                 Das FPV Portal für München und Bayern
               </h1>
             </Link>
-          </div>
+          </React.Fragment>
         )}
       />
     </header>

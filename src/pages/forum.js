@@ -10,8 +10,7 @@ export default () => (
     <Card className="h-100">
       <div className="embed-responsive h-100">
         <Iframe
-          className="embed-responsive-item"
-          scrolling="no"
+          className="embed-responsive-item h-100"
           importance="high"
           url="http://munichmultirotor.de/index.php?sid=11a8be97e259610625bd132004a87828"
         />

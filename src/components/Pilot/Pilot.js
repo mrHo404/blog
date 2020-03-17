@@ -23,8 +23,8 @@ export default props => (
           <a href={props.profile.multiGpURL}>MultiGP Profil</a>
         ) : null}
       </p>
-      <PilotSocialLinks socialLinks={props.profile.socialLinks} />
       <Equipment equipment={props.profile.equipment} />
+      <PilotSocialLinks socialLinks={props.profile.socialLinks} />
     </div>
   </pilot>
 )
