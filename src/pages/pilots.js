@@ -5,6 +5,7 @@ import { RANKS_ENUM } from "./../data/enums"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
+import { SIDEBAR_CONTENTS } from "../data/sidebarContents"
 
 let pilotsSorted = [[], [], [], [], [], []]
 
@@ -68,7 +69,7 @@ const buildPilotsPerRank = rankArr => {
 export default () => {
   sortPilotArray()
   return (
-    <Layout pageTitle="Die BMR Mafia">
+    <Layout pageTitle="Die BMR Mafia" sidebarContent={SIDEBAR_CONTENTS.ABOUT}>
       <SEO title="BMR Piloten" />
       {pilotsSorted.map(rankArr => buildPilotsPerRank(rankArr))}
     </Layout>
