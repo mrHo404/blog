@@ -11,5 +11,3 @@ tags:
 Angesichts der aktuellen Situation in Europa mit dem COVID-19 Corona-Virus fühlen wir uns leider dazu gewungen bis zum 20. April alle Events wie das BMR-Monthly meeting abzusagen.
 
 Es ist uns wichtig, dass wir uns alle gesund bleiben und keiner unnötig gefährdet wird. Hoffentlich stehen wir alle das schnell durch und können bald wieder gemeinsam fliegen.
-
-mr_Ho

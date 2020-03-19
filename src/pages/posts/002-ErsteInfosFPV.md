@@ -58,5 +58,3 @@ Die typische Schubkraft eines FPV-Copters liegt weit über 6kg also wäre es the
 <h6>Ist das schwer zu Lernen?</h6>
 
 <h6>Wieso machst du das?</h6>
-
-mr_Ho
