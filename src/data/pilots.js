@@ -405,7 +405,7 @@ const PILOTS = [
     rank: RANKS_ENUM.THREE,
     svAdelsried: true,
     profilePicURL: fallbackPic,
-    flightStyle: "Sag Mal! Kennst du den Track!?",
+    flightStyle: "Oh mein XT60...",
     multiGpURL: "",
     socialLinks: [],
     sponsors: [],
@@ -677,7 +677,8 @@ const PILOTS = [
     socialLinks: [
       {
         id: "youtube",
-        link: "https://www.youtube.com/channel/UCMv_QEwVKsj6wiWxFSQygsg?view_as=subscriber",
+        link:
+          "https://www.youtube.com/channel/UCMv_QEwVKsj6wiWxFSQygsg?view_as=subscriber",
       },
       {
         id: "facebook",

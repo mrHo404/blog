@@ -34,3 +34,26 @@ ul.post-tags {
     }
   }
 }
+
+.card-bmr-colors {
+  background-image: linear-gradient(to top, $dark-blue, $darkest-blue);
+  color: $white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $lightest-blue;
+  }
+
+  a {
+    color: $light-blue;
+    font-family: $site-font;
+    &:hover {
+      color: $lightest-blue;
+      text-decoration: none;
+    }
+  }
+}

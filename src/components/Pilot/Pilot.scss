@@ -1,4 +1,4 @@
-@import './src/styles/variables';
+@import "./src/styles/variables";
 
 pilot {
   display: flex;
@@ -14,7 +14,7 @@ pilot {
   }
 
   h4 {
-    color: $lightest-blue
+    color: $lightest-blue;
   }
 
   a {
@@ -60,46 +60,46 @@ pilot {
 
   @keyframes text-slide-down {
     from {
-      height: 50px;
+      height: 75px;
     }
     to {
-      height: 500px;
+      height: 480px;
     }
   }
 
   @keyframes text-slide-up {
     from {
-      height: 500px;
+      height: 480px;
     }
     to {
-      height: 50px;
+      height: 75px;
     }
   }
 
   @keyframes fade-out {
     from {
-      opacity: 100
+      opacity: 100;
     }
     to {
-      opacity: 0
+      opacity: 0;
     }
   }
 
   @keyframes fade-in {
     from {
-      opacity: 0
+      opacity: 0;
     }
     to {
-      opacity: 100
+      opacity: 100;
     }
   }
 
   @keyframes colour-fade-out {
     from {
-      opacity: 100
+      opacity: 100;
     }
     to {
-      opacity: 0
+      opacity: 0;
     }
   }
 
@@ -114,7 +114,3 @@ pilot {
     }
   }
 }
-
-
-
-

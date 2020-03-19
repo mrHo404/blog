@@ -6,83 +6,12 @@ import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-
-const sidebarContents = [
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "Sportverein-Adelsried.de",
-        ref: "https://www.sportverein-adelsried.de/",
-      },
-    },
-    content: {
-      title: "Nimm Kontakt zu uns auf und werde Mitglied!",
-      text: [],
-    },
-    img: {
-      imgUrl: "svaLogo",
-      ref: "https://www.sportverein-adelsried.de/",
-    },
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "Kneifl.Mic@web.de",
-        ref: "mailto:Kneifl.Mic@web.de",
-      },
-    },
-    content: [
-      {
-        title: "Abteilungsleiter:",
-        text: ["Michael Kneifl"],
-      },
-    ],
-    img: null,
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "Shaneking@gmx.de",
-        ref: "mailto:Shaneking@gmx.de",
-      },
-    },
-    content: [
-      {
-        title: "Stellvertreter:",
-        text: ["Ben"],
-      },
-    ],
-    img: null,
-  },
-  {
-    content: {
-      title: "Social Media:",
-      text: [],
-    },
-    action: {
-      type: "socialContacts",
-      data: [
-        {
-          id: "home",
-          link: "https://sportverein-adelsried.de/",
-        },
-        {
-          id: "facebook",
-          link:
-            "https://www.facebook.com/Drone-Racing-SV-Adelsried-2466568150286674/",
-        },
-      ],
-    },
-  },
-]
+import { SIDEBAR_CONTENTS } from "./../data/sidebarContents"
 
 export default ({ data }) => (
   <Layout
     pageTitle="Drone Racing beim SV Adelsried"
-    sidbarContent={sidebarContents}
+    sidebarContent={SIDEBAR_CONTENTS.SVA}
   >
     <SEO title="Drone Racing beim SV Adelsried" />
     <Card>
@@ -155,16 +84,15 @@ export default ({ data }) => (
         <p>
           Mitglieder können natürlich all die oben genannten Vorteile in vollem
           Umfang nutzen und auch alle anderen Vorteile des Vereins. Checkt ab ob
-          der Platz frei ist und trainiert. Gerade wenn ihr aus
-          der Region kommt lohnt es sich besonders, denn ihr habt ein neues
-          Zuhause für Drone Racing gefunden. Auf den monatlichen Races sind
-          natürlich alle Piloten eingeladen auch Nichtmitglieder. Hier geht es
-          ja schließlich darum das sich ALLE Piloten von Überall gegeneinander
-          messen können und im fairen Wettstreit gegeneinander antreten und
-          miteinander trainieren. Nur müssen wir natürlich für Nichtmitglieder
-          eine kleine Gebühr verlangen wenn sie an den monatlichen Rennen
-          teilnehmen wollen oder mal mit trainieren. Es lohnt sich also Mitglied
-          zu werden.
+          der Platz frei ist und trainiert. Gerade wenn ihr aus der Region kommt
+          lohnt es sich besonders, denn ihr habt ein neues Zuhause für Drone
+          Racing gefunden. Auf den monatlichen Races sind natürlich alle Piloten
+          eingeladen auch Nichtmitglieder. Hier geht es ja schließlich darum das
+          sich ALLE Piloten von Überall gegeneinander messen können und im
+          fairen Wettstreit gegeneinander antreten und miteinander trainieren.
+          Nur müssen wir natürlich für Nichtmitglieder eine kleine Gebühr
+          verlangen wenn sie an den monatlichen Rennen teilnehmen wollen oder
+          mal mit trainieren. Es lohnt sich also Mitglied zu werden.
         </p>
         <h3>BMR und SV Adelsried-Drone Racing</h3>
         <hr />

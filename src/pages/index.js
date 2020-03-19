@@ -11,12 +11,12 @@ const IndexPage = () => {
   let nrOfPages
   return (
     <Layout pageTitle="Servus bei Bavarian-MultiRotor">
-      <SEO title="Home"/>
+      <SEO title="Home" />
       <StaticQuery
         query={indexQuery}
         render={data => {
           nrOfPages = Math.ceil(
-            data.allMarkdownRemark.totalCount / postsPerPage,
+            data.allMarkdownRemark.totalCount / postsPerPage
           )
           return (
             <div>
@@ -31,7 +31,7 @@ const IndexPage = () => {
                   fluid={node.frontmatter.image.childImageSharp.fluid}
                 />
               ))}
-              <PaginationLinks currentPage={1} nrOfPages={nrOfPages}/>
+              <PaginationLinks currentPage={1} nrOfPages={nrOfPages} />
             </div>
           )
         }}
@@ -57,7 +57,7 @@ const indexQuery = graphql`
             tags
             image {
               childImageSharp {
-                fluid(maxWidth: 600 maxHeight: 400) {
+                fluid(maxWidth: 645, maxHeight: 485) {
                   ...GatsbyImageSharpFluid
                 }
               }

@@ -2,100 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
-
-const sidebarContents = [
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "r.stach.muc@gmail.com",
-        ref: "mailto:r.stach.muc@gmail.com",
-      },
-    },
-    content: [
-      {
-        title: "Angaben gemäß §5 TMG:",
-        text: ["Robert Stach", "Krautheimstr. 27a", "80997 München"],
-      },
-      {
-        title: "Kontakt:",
-        text: ["Telefon: +49 (0) 170 18 88 82 5"],
-      },
-    ],
-    img: null,
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "www.e-recht24.de",
-        ref: "https://www.e-recht24.de",
-      },
-    },
-    content: [
-      {
-        title: "Verantwortlich für den Inhalt nach §55 Abs. 2 RStV:",
-        text: ["Robert Stach", "Krautheimstr. 27a", "80997 München"],
-      },
-      {
-        title: "Quelle:",
-        text: [],
-      },
-    ],
-    img: null,
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "ho.chi-tin@gmx.de",
-        ref: "mailto:ho.chi-tin@gmx.de",
-      },
-    },
-    content: [
-      {
-        title: "Webdesign:",
-        text: ["Chi-Tin Ho"],
-      },
-    ],
-    img: null,
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "Niklas Solle",
-        ref: "https://www.facebook.com/revomotionmedia/",
-      },
-    },
-    content: [
-      {
-        title: "Bilder von:",
-        text: [],
-      },
-    ],
-    img: null,
-  },
-  {
-    action: {
-      type: "link",
-      data: {
-        label: "www.flaticon.com",
-        ref: "https://www.flaticon.com/authors/freepik",
-      },
-    },
-    content: [
-      {
-        title: "Icons von:",
-        text: [],
-      },
-    ],
-    img: null,
-  },
-]
+import { SIDEBAR_CONTENTS } from "./../data/sidebarContents"
 
 export default () => (
-  <Layout pageTitle="Impressum" sidebarContents={sidebarContents}>
+  <Layout pageTitle="Impressum" sidebarContent={SIDEBAR_CONTENTS.IMPRINT}>
     <SEO title="Impressum" />
     <Card>
       <CardBody>

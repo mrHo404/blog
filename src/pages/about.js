@@ -2,32 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
-const sidebarContents = [
-  {
-    action: {
-      type: "button",
-      data: {
-        label: "Zum Forum",
-        ref: "/forum",
-      }
-    },
-    content: [
-      {
-        title: "Nimm Kontakt zu uns auf",
-        text: [
-          "Quatsch mit uns, wir beissen nicht.",
-          "Einfach in unserem Forum eine kleine Nachricht hinterlassen und wir schalten dich so schnell wie möglich frei.",
-        ],
-      },
-    ],
-    img: {
-      imgUrl: "bmrBadge",
-      ref: null,
-    },
-  },
-]
+import { SIDEBAR_CONTENTS } from "./../data/sidebarContents"
+
 export default () => (
-  <Layout pageTitle="Wir sind BMR!" sidebarContent={sidebarContents}>
+  <Layout pageTitle="Wir sind BMR!" sidebarContent={SIDEBAR_CONTENTS.ABOUT}>
     <SEO title="Wir sind BMR!" />
     <Card>
       <CardBody>

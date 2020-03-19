@@ -20,7 +20,13 @@ export default props => (
         Flugstil: {props.profile.flightStyle}
         <br />
         {props.profile.multiGpURL !== "" ? (
-          <a href={props.profile.multiGpURL} target="_blank" rel="noopener noreferrer">MultiGP Profil</a>
+          <a
+            href={props.profile.multiGpURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MultiGP Profil
+          </a>
         ) : null}
       </p>
       <Equipment equipment={props.profile.equipment} />
@@ -47,7 +53,7 @@ class Equipment extends Component {
       <div className={"text-expand-down"}>
         <Button
           onClick={this.toggleShowEquipment}
-          className="btn btn-light ml-3 mt-4 mb-2"
+          className="btn btn-dark ml-3 mt-4 mb-2"
         >
           Ausrüstung
         </Button>
@@ -92,7 +98,7 @@ class Equipment extends Component {
       <div className={this.state.initLoad ? null : "text-expand-up"}>
         <Button
           onClick={this.toggleShowEquipment}
-          className="btn btn-light ml-3 mt-4 mb-2"
+          className="btn btn-dark ml-3 mt-4 mb-2"
         >
           Ausrüstung
         </Button>

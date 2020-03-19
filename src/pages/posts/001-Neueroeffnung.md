@@ -2,7 +2,7 @@
 title: 'BMR kriegt ne neue Webseite! Whoop Whoop'
 date: '2020-03-17 18:00:00'
 author: mr_Ho
-image: postImages/Banner_At_event.jpg
+image: postImages/Chippie_01.jpg
 tags: 
 - blog
 ---
