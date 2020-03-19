@@ -58,6 +58,16 @@ pilot {
     padding-left: 20px;
   }
 
+  .btn-bmr {
+    color: $lightest-blue;
+    background-color: $darkest-blue;
+    border-color: $darkest-blue;
+    &:hover {
+      color: $darkest-blue;
+      background-color: $lightest-blue;
+      border-color: $darkest-blue;
+    }
+  }
   @keyframes text-slide-down {
     from {
       height: 75px;

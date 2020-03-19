@@ -9,7 +9,7 @@ const getActions = action => {
   switch (action.type) {
     case "button":
       return (
-        <Link to={action.data.ref} className="btn btn-dark mt-3">
+        <Link to={action.data.ref} className="btn btn-bmr mt-3">
           {action.data.label}
         </Link>
       )

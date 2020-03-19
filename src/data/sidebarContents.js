@@ -30,14 +30,14 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "Kneifl.Mic@web.de",
+          label: "Michael Kneifl",
           ref: "mailto:Kneifl.Mic@web.de",
         },
       },
       content: [
         {
           title: "Abteilungsleiter:",
-          text: ["Michael Kneifl"],
+          text: [],
         },
       ],
       img: null,
@@ -46,14 +46,14 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "Shaneking@gmx.de",
+          label: "Benjamin Lorenz",
           ref: "mailto:Shaneking@gmx.de",
         },
       },
       content: [
         {
           title: "Stellvertreter:",
-          text: ["Ben"],
+          text: [],
         },
       ],
       img: null,
@@ -108,7 +108,7 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "www.e-recht24.de",
+          label: "e-recht24.de",
           ref: "https://www.e-recht24.de",
         },
       },
@@ -128,14 +128,14 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "ho.chi-tin@gmx.de",
+          label: "Chi-Tin Ho",
           ref: "mailto:ho.chi-tin@gmx.de",
         },
       },
       content: [
         {
           title: "Webdesign:",
-          text: ["Chi-Tin Ho"],
+          text: [],
         },
       ],
       img: null,
@@ -160,7 +160,7 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "www.flaticon.com",
+          label: "flaticon.com",
           ref: "https://www.flaticon.com/authors/freepik",
         },
       },

@@ -23,12 +23,12 @@ const PARTNERS = [
     type: PARTNER_TYPES_ENUM.LEAGUE,
     img: multiGP,
   },
-  {
-    title: "SV. Adelsried",
-    link: "https://www.multigp.com/",
-    type: PARTNER_TYPES_ENUM.CLUB,
-    img: svaBadge,
-  },
+  // {
+  //   title: "SV. Adelsried",
+  //   link: "https://www.multigp.com/",
+  //   type: PARTNER_TYPES_ENUM.CLUB,
+  //   img: svaBadge,
+  // },
 ]
 
 export default PARTNERS

@@ -36,8 +36,19 @@ ul.post-tags {
 }
 
 .card-bmr-colors {
-  background-image: linear-gradient(to top, $dark-blue, $darkest-blue);
+  background-image: linear-gradient(to top left, $dark-blue, $darkest-blue);
   color: $white;
+
+  .btn-bmr {
+    color: $lightest-blue;
+    background-color: $darkest-blue;
+    border-color: $darkest-blue;
+    &:hover {
+      color: $darkest-blue;
+      background-color: $lightest-blue;
+      border-color: $darkest-blue;
+    }
+  }
 
   h1,
   h2,
