@@ -42,13 +42,13 @@ export default ({ sidebarContent }) => (
             ]}
           />
           <SidebarTags />
-          <AdvertisementCard />
+          {/*<AdvertisementCard />*/}
           <RecentPostsCard recentPosts={data.allMarkdownRemark.edges} />
         </div>
       ) : (
         <div>
           <SidebarTags />
-          <AdvertisementCard />
+          {/*<AdvertisementCard />*/}
           <RecentPostsCard recentPosts={data.allMarkdownRemark.edges} />
         </div>
       )

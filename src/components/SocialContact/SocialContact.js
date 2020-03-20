@@ -43,7 +43,7 @@ export default props => {
   return link !== "" ? (
     <div className="social-contact-icon">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img src={icons.light} alt="socialIconLight" className="bottom" />
+        <img src={icons.light} alt="socialIconLight"/>
         <img src={icons.dark} alt="socialIconDark" className="top" />
       </a>
     </div>

@@ -526,7 +526,7 @@ const PILOTS = [
       controlLink: "TBS Crossfire",
       raceKwad: {
         names: "",
-        frame: "QAAD Infinitium",
+        frame: "BlitzFPV Infinitium",
         motors: "iFlight Xing 2207 1800kV",
         escs: "FETtec 45A",
         fc: "FETtec F7",

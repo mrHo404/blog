@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import "./Pilot.scss"
-import SocialContact from "../SocialContact/SocialContact"
+import SocialContact from "./../SocialContact/SocialContact"
 import { Button } from "reactstrap"
 //TODO add Adelsried Badge
 //TODO Update with react hooks
