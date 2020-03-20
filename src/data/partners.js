@@ -1,7 +1,7 @@
 import fpvCopter from "./../assets/partners/FPV-Copter-Shop-FPVCopter-Racer-Shop.jpg"
 import aircrashers from "../assets/partners/csm_AirCrasherLogo_big_beb2f4b411.png"
 import multiGP from "./../assets/partners/multigp-logo-vertical-light-backgrounds-300x300.png"
-import svaBadge from "./../assets/logos/sva_logo.png"
+import svaWings from "./../assets/logos/sva_logo_wings.png"
 import { PARTNER_TYPES_ENUM } from "./enums";
 
 const PARTNERS = [
@@ -23,12 +23,12 @@ const PARTNERS = [
     type: PARTNER_TYPES_ENUM.LEAGUE,
     img: multiGP,
   },
-  // {
-  //   title: "SV. Adelsried",
-  //   link: "https://www.multigp.com/",
-  //   type: PARTNER_TYPES_ENUM.CLUB,
-  //   img: svaBadge,
-  // },
+  {
+    title: "SV. Adelsried",
+    link: "https://www.multigp.com/",
+    type: PARTNER_TYPES_ENUM.CLUB,
+    img: svaWings,
+  },
 ]
 
 export default PARTNERS

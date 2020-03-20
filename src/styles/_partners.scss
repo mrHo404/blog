@@ -3,20 +3,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 400px;
-  height: 200px;
-  word-break: keep-all;
-  margin-right: 10px;
-  //background-color: #005792;
-  //background-image: linear-gradient(to bottom right, #00204a, #005792);
   color: $lightest-blue;
-  padding: 20px 20px 20px;
+  padding: 20px 20px 20px 10px;
   border-radius: 5px;
-  //transition: background-image 5s linear;
   position: relative;
   background-image: linear-gradient(to top left, $light-blue, $white);
   z-index: 1;
-  text-decoration: none;
 }
 
 .partner-background::before {
@@ -32,13 +24,17 @@
   color: $lightest-blue;
   transition: opacity 0.5s linear;
   opacity: 0;
-  text-decoration: none;
 }
 
 .partner-background:hover::before {
   background-image: linear-gradient(to top right, $light-blue, $white);
   color: $lightest-blue;
   opacity: 1;
-  text-decoration: none;
+}
+.partner-img {
+  max-width: 600px;
+  max-height: 400px;
+  opacity: 80%;
+  align-self: center;
 }
 
