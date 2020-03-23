@@ -1,14 +1,15 @@
 import React from "react"
+import Img from "gatsby-image"
 
-export default props => {
-  const { title, img, link } = props.partners
-  return (
-    <a href={link} className="partner-background m-3">
-      <img
-        src={img}
-        alt={title}
-        className="partner-img"
+export default ({ partner, img }) => {
+  console.log("img", partner.imgUrl)
+
+  return !!img ? (
+    <a href={partner.link} className="partner-background m-3 p-3">
+      <Img
+        fluid={img.childImageSharp.fluid}
+        className="m-4"
       />
     </a>
-  )
+  ) : null
 }

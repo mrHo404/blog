@@ -5,12 +5,12 @@
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  word-break: keep-all;
 
-  img {
+  .profile-pic {
     max-width: 250px;
-    max-height: 250px;
+    max-height: 375px;
     border-radius: 5px;
-    margin: 10px;
   }
 
   h4 {
@@ -27,9 +27,12 @@
   .pilot-background {
     display: inline-block;
     width: 750px;
-    word-break: keep-all;
     margin-right: 10px;
-    background-image: linear-gradient(to bottom right, $darkest-blue, $dark-blue);
+    background-image: linear-gradient(
+      to bottom right,
+      $darkest-blue,
+      $dark-blue
+    );
     color: $lightest-blue;
     padding: 10px 20px 20px;
     border-radius: 5px;

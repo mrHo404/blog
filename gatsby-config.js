@@ -16,13 +16,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pilotPics`,
-        path: `${__dirname}/src/images/pilotPics`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `logos`,
         path: `${__dirname}/src/assets/logos`,
       },

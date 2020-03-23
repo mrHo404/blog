@@ -1,4 +1,3 @@
-import fallbackPic from "../images/pilotPics/fallbackPic.png"
 import { RANKS_ENUM, SEASONS_ENUM } from "./enums"
 
 const PILOTS = [
@@ -11,7 +10,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.ONE,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "R_Stach",
     flightStyle:
       "Hart - Tief - Ausbaufähig. Jedes Hinderniss wird mitgenommen :)",
     multiGpURL: "https://www.multigp.com/pilots/view/?pilot=Midorr",
@@ -72,7 +71,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.TWO,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "T_Ho",
     flightStyle: "117: Fried flow with a side of RICE, €12.90",
     multiGpURL: "https://www.multigp.com/pilots/view/?pilot=Kus4n4gi",
     socialLinks: [
@@ -132,7 +131,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.TWO,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "V_Kitanov",
     flightStyle: "Kepp Calm and Go Faster",
     multiGpURL: "",
     socialLinks: [],
@@ -167,7 +166,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.THREE,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "A_Schlabschi",
     flightStyle: "Chillig",
     multiGpURL: "https://www.multigp.com/pilots/view/?pilot=Alxx",
     socialLinks: [],
@@ -202,7 +201,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.TWO,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "M_Kneifl",
     flightStyle: "Dont Thinkt about it Just o It!",
     multiGpURL: "",
     socialLinks: [],
@@ -237,7 +236,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.TWO,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "B_Lorenz",
     flightStyle: "Fullsend ist bei mir Idle!",
     multiGpURL: "",
     socialLinks: [
@@ -277,7 +276,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.FIVE,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "N_Solle",
     flightStyle: "",
     multiGpURL: "",
     socialLinks: [
@@ -342,7 +341,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.SIX,
     svAdelsried: true,
-    profilePicURL: "",
+    profilePicURL: "A_Pollinger",
     flightStyle: "Brandgefahr!",
     multiGpURL: "",
     socialLinks: [
@@ -403,7 +402,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.THREE,
     svAdelsried: true,
-    profilePicURL: fallbackPic,
+    profilePicURL: "H_Berberich",
     flightStyle: "Oh mein XT60...",
     multiGpURL: "",
     socialLinks: [],
@@ -438,7 +437,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.FOUR,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "G_Popov",
     flightStyle: "Ach ne Garnichts, Jan Delay",
     multiGpURL: "",
     socialLinks: [
@@ -478,7 +477,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.FOUR,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "T_Dinges",
     flightStyle: "Fly Your Own Race",
     multiGpURL: "",
     socialLinks: [],
@@ -513,7 +512,7 @@ const PILOTS = [
     yearToAir: "2016",
     rank: RANKS_ENUM.THREE,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "J_DeCrescenzo",
     flightStyle: "So ein großer Feuerball Junge!",
     multiGpURL: "",
     socialLinks: [],
@@ -540,7 +539,7 @@ const PILOTS = [
     },
   },
   {
-    id: 13,
+    id: 14,
     callsign: "Nightmarex2",
     name: "Marcus Schneyer",
     displayRealName: true,
@@ -548,7 +547,7 @@ const PILOTS = [
     yearToAir: "2017",
     rank: RANKS_ENUM.THREE,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "M_Schneyer",
     flightStyle: "Game Over",
     multiGpURL: "",
     socialLinks: [],
@@ -575,7 +574,7 @@ const PILOTS = [
     },
   },
   {
-    id: 13,
+    id: 15,
     callsign: "DanuFPV",
     name: "Daniel Falkner",
     displayRealName: true,
@@ -583,7 +582,7 @@ const PILOTS = [
     yearToAir: "2015",
     rank: RANKS_ENUM.SIX,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "",
     flightStyle: "Most Destructive Pilot",
     multiGpURL: "",
     socialLinks: [],
@@ -610,7 +609,7 @@ const PILOTS = [
     },
   },
   {
-    id: 14,
+    id: 16,
     callsign: "Sandro",
     name: "Sandro Hafner",
     displayRealName: true,
@@ -618,7 +617,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.THREE,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "S_Hafner",
     flightStyle: "Den Gedanken immer einen Schritt voraus",
     multiGpURL: "https://www.multigp.com/pilots/view/?pilot=SandroFTW",
     socialLinks: [
@@ -662,7 +661,7 @@ const PILOTS = [
     },
   },
   {
-    id: 15,
+    id: 17,
     callsign: "Loisl701SQ",
     name: "Alois Heinzl",
     displayRealName: true,
@@ -670,7 +669,7 @@ const PILOTS = [
     yearToAir: "2019",
     rank: RANKS_ENUM.FOUR,
     svAdelsried: false,
-    profilePicURL: fallbackPic,
+    profilePicURL: "A_Heinzl",
     flightStyle: "Ich wollt schon wieder zu viel!",
     multiGpURL: "",
     socialLinks: [

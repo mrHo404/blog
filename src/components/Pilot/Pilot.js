@@ -2,26 +2,29 @@ import React, { Component } from "react"
 import "./Pilot.scss"
 import SocialContact from "./../SocialContact/SocialContact"
 import { Button } from "reactstrap"
+import Img from "gatsby-image"
 //TODO add Adelsried Badge
 //TODO Update with react hooks
-export default props => (
+export default ({ profile, img, fallback }) => (
   <div className="pilot-wrapper">
-    <img src={props.profile.profilePicURL} alt="profile" />
-    <div className={"pilot-background"}>
+    {img && img.childImageSharp ? (
+      <Img fluid={img.childImageSharp.fluid} className="pilot-background profile-pic" />
+    ) : (
+      <Img fluid={fallback.childImageSharp.fluid} className="pilot-background profile-pic" />
+    )}
+    <div className="pilot-background">
       <h4>
-        {props.profile.callsign}
-        <span>
-          {props.profile.displayRealName ? " - " + props.profile.name : ""}
-        </span>
+        {profile.callsign}
+        <span>{profile.displayRealName ? " - " + profile.name : ""}</span>
       </h4>
       <p>
-        Fliegt seit: {props.profile.quarterToAir}, {props.profile.yearToAir}
+        Fliegt seit: {profile.quarterToAir}, {profile.yearToAir}
         <br />
-        Flugstil: {props.profile.flightStyle}
+        Flugstil: {profile.flightStyle}
         <br />
-        {props.profile.multiGpURL !== "" ? (
+        {profile.multiGpURL !== "" ? (
           <a
-            href={props.profile.multiGpURL}
+            href={profile.multiGpURL}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,8 +32,8 @@ export default props => (
           </a>
         ) : null}
       </p>
-      <Equipment equipment={props.profile.equipment} />
-      <PilotSocialLinks socialLinks={props.profile.socialLinks} />
+      <Equipment equipment={profile.equipment} />
+      <PilotSocialLinks socialLinks={profile.socialLinks} />
     </div>
   </div>
 )
@@ -49,6 +52,7 @@ class Equipment extends Component {
   }
 
   render() {
+    const { equipment } = this.props
     return this.state.showEquipment ? (
       <div className={"text-expand-down"}>
         <Button
@@ -59,42 +63,40 @@ class Equipment extends Component {
         </Button>
         <div className={"text-fade-in"}>
           <p>
-            Brille: {this.props.equipment.goggles}
-            <br /> Fernsteuerung: {this.props.equipment.radio}
-            <br /> Funkprotokoll: {this.props.equipment.controlLink}
+            Brille: {equipment.goggles}
+            <br /> Fernsteuerung: {equipment.radio}
+            <br /> Funkprotokoll: {equipment.controlLink}
           </p>
           <h4>
             Copter:{" "}
-            {this.props.equipment.raceKwad.names !== ""
-              ? this.props.equipment.raceKwad.names
-              : null}
+            {equipment.raceKwad.names !== "" ? equipment.raceKwad.names : null}
           </h4>
           <p>
-            Rahmen: {this.props.equipment.raceKwad.frame}
+            Rahmen: {equipment.raceKwad.frame}
             <br />
-            Motoren: {this.props.equipment.raceKwad.motors}
+            Motoren: {equipment.raceKwad.motors}
             <br />
-            ESCs: {this.props.equipment.raceKwad.escs}
+            ESCs: {equipment.raceKwad.escs}
             <br />
-            Flug-Controller: {this.props.equipment.raceKwad.fc}
+            Flug-Controller: {equipment.raceKwad.fc}
             <br />
-            Empfänger: {this.props.equipment.raceKwad.rx}
+            Empfänger: {equipment.raceKwad.rx}
             <br />
-            Kamera: {this.props.equipment.raceKwad.cam}
+            Kamera: {equipment.raceKwad.cam}
             <br />
-            Videosender: {this.props.equipment.raceKwad.vtx}
+            Videosender: {equipment.raceKwad.vtx}
             <br />
-            Propeller: {this.props.equipment.raceKwad.props}
+            Propeller: {equipment.raceKwad.props}
             <br />
-            Antenne: {this.props.equipment.raceKwad.antenna}
+            Antenne: {equipment.raceKwad.antenna}
             <br />
-            Akku: {this.props.equipment.raceKwad.lipo}
+            Akku: {equipment.raceKwad.lipo}
             <br />
-            Abfluggewicht mit Akku: {this.props.equipment.raceKwad.auw}
+            Abfluggewicht mit Akku: {equipment.raceKwad.auw}
           </p>
         </div>
       </div>
-    ) : this.props.equipment.statedEquipment ? (
+    ) : equipment.statedEquipment ? (
       <div className={this.state.initLoad ? null : "text-expand-up"}>
         <Button
           onClick={this.toggleShowEquipment}

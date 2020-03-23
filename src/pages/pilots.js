@@ -8,8 +8,7 @@ import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 import { SIDEBAR_CONTENTS } from "../data/sidebarContents"
 import { graphql } from "gatsby"
 
-
-//TODO Refactor take out let
+//TODO Refactor take out let use lodash
 let pilotsSorted = [[], [], [], [], [], []]
 
 const sortPilotArray = () => {
@@ -36,47 +35,50 @@ const sortPilotArray = () => {
   return null
 }
 
-const buildPilotsPerRank = rankArr => {
+const buildPilotsPerRank = (rankArr, pilotPics) => {
   return rankArr.length > 0 ? (
-    <Card>
+    <Card key={rankArr[0].rank}>
       <CardBody>
-        <div key={rankArr[0].rank}>
-          {rankArr[0].rank === RANKS_ENUM.FIVE ||
-          rankArr[0].rank === RANKS_ENUM.SIX ? (
-            <React.Fragment>
-              <h1>Co-Cospiratores:</h1>
-            </React.Fragment>
-          ) : null}
-          {rankArr[0].rank === RANKS_ENUM.ONE ? (
-            <CardHeader>
-              <CardTitle>
-                <h1>{rankArr[0].rank}</h1>
-              </CardTitle>
-            </CardHeader>
-          ) : (
-            <CardHeader>
-              <CardTitle>
-                <h3>{rankArr[0].rank}</h3>
-              </CardTitle>
-            </CardHeader>
-          )}
-          {rankArr.map(pilot => (
-            <Pilot key={pilot.id} profile={pilot} />
-          ))}
-        </div>
+        {rankArr[0].rank === RANKS_ENUM.FIVE ||
+        rankArr[0].rank === RANKS_ENUM.SIX ? (
+          <h1>Co-Cospiratores:</h1>
+        ) : null}
+        {rankArr[0].rank === RANKS_ENUM.ONE ? (
+          <CardHeader>
+            <CardTitle>
+              <h1>{rankArr[0].rank}</h1>
+            </CardTitle>
+          </CardHeader>
+        ) : (
+          <CardHeader>
+            <CardTitle>
+              <h3>{rankArr[0].rank}</h3>
+            </CardTitle>
+          </CardHeader>
+        )}
+        {rankArr.map(pilot => (
+          <Pilot
+            key={pilot.id}
+            profile={pilot}
+            img={pilotPics.find(
+              pilotPic => pilotPic.name === pilot.profilePicURL
+            )}
+            fallback={pilotPics.find(pilotPic => pilotPic.name === "fallback")}
+          />
+        ))}
       </CardBody>
     </Card>
   ) : null
 }
 
 export default ({ data }) => {
-  const pilotPics = data.images.nodes;
-  console.log("data", pilotPics)
   sortPilotArray()
   return (
     <Layout pageTitle="Die BMR Mafia" sidebarContent={SIDEBAR_CONTENTS.ABOUT}>
       <SEO title="BMR Piloten" />
-      {pilotsSorted.map(rankArr => buildPilotsPerRank(rankArr))}
+      {pilotsSorted.map(rankArr =>
+        buildPilotsPerRank(rankArr, data.images.nodes)
+      )}
     </Layout>
   )
 }
@@ -88,7 +90,7 @@ export const pilotPicQuery = graphql`
         id
         name
         childImageSharp {
-          fluid(maxWidth: 250) {
+          fluid(maxWidth: 375) {
             ...GatsbyImageSharpFluid
           }
         }

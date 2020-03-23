@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 import { PARTNER_TYPES_ENUM } from "../data/enums"
+import { graphql } from "gatsby"
 
 let partnersSorted = [[], [], [], []]
 
@@ -28,31 +29,66 @@ const sortPartnerArray = () => {
   return null
 }
 
-const buildPartnersPerType = partnerArr => {
+const buildPartnersPerType = (partnerArr, partnerImages) => {
   return partnerArr.length > 0 ? (
     <Card>
       <CardBody>
         <CardHeader>
           <CardTitle>
-            <h4>
-              {partnerArr[0].type}
-            </h4>
+            <h4>{partnerArr[0].type}</h4>
           </CardTitle>
         </CardHeader>
         {partnerArr.map(partner => (
-          <Partner key={partner} partners={partner} />
+          <Partner
+            key={partner.title}
+            partner={partner}
+            img={partnerImages.find(
+              partnerPic => partnerPic.name === partner.imgUrl
+            )}
+          />
         ))}
       </CardBody>
     </Card>
   ) : null
 }
 
-export default () => {
+export default ({ data }) => {
+  const images = data.images.nodes
+  images.push(data.svaWings)
+  console.log("images", images)
+
   sortPartnerArray()
   return (
     <Layout pageTitle="Unsere Partner">
       <SEO title="Unsere Partner" />
-      {partnersSorted.map(partnerArr => buildPartnersPerType(partnerArr))}
+      {partnersSorted.map(partnerArr =>
+        buildPartnersPerType(partnerArr, images)
+      )}
     </Layout>
   )
 }
+
+export const patrnerPicQuery = graphql`
+  query patrnerPicQuery {
+    images: allFile(filter: { relativeDirectory: { eq: "partners" } }) {
+      nodes {
+        id
+        name
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+    svaWings: file(relativePath: { eq: "sva_logo_wings.png" }) {
+      id
+      name
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
