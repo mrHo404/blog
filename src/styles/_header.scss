@@ -8,9 +8,27 @@ header {
   .logo {
     margin-top: 20px;
   }
-
   .sub-title-line {
     color: $white;
     margin-bottom: 0;
+    font-size: 65px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .sub-title-line {
+      font-size: xx-large;
+    }
+    .logo {
+      margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 765px) {
+    .sub-title-line {
+      font-size: large;
+    }
+    .logo {
+      margin-top: 35px;
+    }
   }
 }
