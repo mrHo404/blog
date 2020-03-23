@@ -38,7 +38,7 @@ export default () => {
             className="card-img"
             fluid={notFoundQuery.file.childImageSharp.fluid}
           />
-          <Link className=" btn btn-primary text-uppercase mt-3 w-100" to={"/"}>
+          <Link className="btn btn-primary text-uppercase mt-3 w-100" to={"/"}>
             Zurück zur Hauptseite
           </Link>
         </CardBody>
