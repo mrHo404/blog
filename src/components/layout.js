@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 import { Row, Col } from "reactstrap"
 
-import Header from "./header"
-import "../styles/index.scss"
+import Header from "./Header"
+import "./../styles/index.scss"
 import Footer from "./Footer"
 import Sidebar from "./Sidebar"
 
