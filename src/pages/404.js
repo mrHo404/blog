@@ -11,7 +11,7 @@ export default () => {
       file(relativePath: { eq: "404.png" }) {
         id
         childImageSharp {
-          fluid(maxWidth: 1920) {
+          fluid(maxWidth: 832, maxHeight: 624) {
             ...GatsbyImageSharpFluid
           }
         }

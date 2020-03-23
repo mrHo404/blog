@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 import { SIDEBAR_CONTENTS } from "../data/sidebarContents"
+import { graphql } from "gatsby"
 
 let pilotsSorted = [[], [], [], [], [], []]
 
@@ -66,7 +67,9 @@ const buildPilotsPerRank = rankArr => {
   ) : null
 }
 
-export default () => {
+export default ({ data }) => {
+  const pilotPics = data.images.nodes;
+  console.log("data", pilotPics)
   sortPilotArray()
   return (
     <Layout pageTitle="Die BMR Mafia" sidebarContent={SIDEBAR_CONTENTS.ABOUT}>
@@ -75,3 +78,19 @@ export default () => {
     </Layout>
   )
 }
+
+export const pilotPicQuery = graphql`
+  query pilotPicQuery {
+    images: allFile(filter: { relativeDirectory: { eq: "pilotPics" } }) {
+      nodes {
+        id
+        name
+        childImageSharp {
+          fluid(maxWidth: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
+`

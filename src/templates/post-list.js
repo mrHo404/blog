@@ -42,7 +42,7 @@ export const postListQuery = graphql`
             date(formatString: "dddd, Do MMM YYYY", locale: "de")
             image {
               childImageSharp {
-                fluid(maxWidth: 645, maxHeight: 485) {
+                fluid(maxWidth: 832, maxHeight: 624) {
                   ...GatsbyImageSharpFluid
                 }
               }

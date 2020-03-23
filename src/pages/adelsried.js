@@ -118,7 +118,7 @@ export const svaLogoQuery = graphql`
     file(relativePath: { eq: "sva_logo_wings.png" }) {
       id
       childImageSharp {
-        fluid(maxWidth: 900) {
+        fluid(maxWidth: 832) {
           ...GatsbyImageSharpFluid
         }
       }

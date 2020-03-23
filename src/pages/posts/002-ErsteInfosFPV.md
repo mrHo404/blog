@@ -2,7 +2,7 @@
 title: Starte durch in FPV
 date: 2020-03-17 18:01:00
 author: mr_Ho
-image: postImages/Haludovo_Chameleon.jpg
+image: postImages/quad_bando.jpg
 tags:
   - tutorials
 ---

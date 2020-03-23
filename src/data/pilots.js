@@ -1,6 +1,5 @@
 import fallbackPic from "../images/pilotPics/fallbackPic.png"
 import { RANKS_ENUM, SEASONS_ENUM } from "./enums"
-import pollinger from "../images/pilotPics/Pollinger.jpeg"
 
 const PILOTS = [
   {
@@ -343,7 +342,7 @@ const PILOTS = [
     yearToAir: "2018",
     rank: RANKS_ENUM.SIX,
     svAdelsried: true,
-    profilePicURL: pollinger,
+    profilePicURL: "",
     flightStyle: "Brandgefahr!",
     multiGpURL: "",
     socialLinks: [

@@ -167,7 +167,7 @@ const sidebarQuery = graphql`
             tags
             image {
               childImageSharp {
-                fluid(maxWidth: 300, maxHeight: 200) {
+                fluid(maxWidth: 300, maxHeight: 225) {
                   ...GatsbyImageSharpFluid
                 }
               }

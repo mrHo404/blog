@@ -89,7 +89,7 @@ export const headerQuery = graphql`
     headerImg: file(relativePath: { eq: "Header.png" }) {
       id
       childImageSharp {
-        fluid(maxWidth: 5760) {
+        fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -97,7 +97,7 @@ export const headerQuery = graphql`
     logoImg: file(relativePath: { eq: "BMR_Logo.png" }) {
       id
       childImageSharp {
-        fluid(maxWidth: 900) {
+        fluid(maxWidth: 832) {
           ...GatsbyImageSharpFluid
         }
       }
