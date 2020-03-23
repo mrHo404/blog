@@ -10,28 +10,28 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pilotPics`,
-        path: `${__dirname}/src/images/pilotPics`,
+        path: `${__dirname}/src/images/pilotPics/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `logos`,
-        path: `${__dirname}/src/assets/logos`,
+        path: `${__dirname}/src/assets/logos/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     `gatsby-transformer-sharp`,

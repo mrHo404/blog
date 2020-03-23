@@ -2,7 +2,7 @@
 title: 'BMR Monthly Meetings und der COVID-19 Corona Virus'
 date: '2020-03-18 07:00:00'
 author: mr_Ho
-image: postImages/martian_ripped.jpg
+image: postImages/Martian_ripped.jpg
 tags:
 - events
 - blog
