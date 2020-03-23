@@ -1,7 +1,7 @@
 {
   "name": "bavarian-multirotor",
-  "private": true,
-  "description": "working with gatsby to see if viable for bmr",
+  "private": false,
+  "description": "bavarian-multirotor blog homepage",
   "version": "0.1.0",
   "author": "Chi-Tin Ho <Ho.Chi-Tin@gmx.de>",
   "dependencies": {
