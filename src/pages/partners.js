@@ -55,8 +55,6 @@ const buildPartnersPerType = (partnerArr, partnerImages) => {
 export default ({ data }) => {
   const images = data.images.nodes
   images.push(data.svaWings)
-  console.log("images", images)
-
   sortPartnerArray()
   return (
     <Layout pageTitle="Unsere Partner">

@@ -282,27 +282,19 @@ const PILOTS = [
     socialLinks: [
       {
         id: "home",
-        link: "https://www.9gag.com",
+        link: "https://www.facebook.com/revomotionmedia/",
       },
       {
         id: "youtube",
-        link: "https://www.youtube.com/user/LipoTV",
+        link: "https://www.youtube.com/channel/UChWEHIMw5tB9SNye2FuOBAw",
       },
       {
         id: "facebook",
-        link: "https://www.facebook.com/BavarianMultiRotor/",
+        link: "https://www.facebook.com/upsidedownfpv/",
       },
       {
         id: "instagram",
-        link: "https://www.instagram.com/bavarianmultirotor/",
-      },
-      {
-        id: "snapchat",
-        link: "https://www.snapchat.com/l/en-gb/",
-      },
-      {
-        id: "twitter",
-        link: "https://twitter.com/hashtag/upsidedown?lang=en",
+        link: "https://www.instagram.com/upsidedownfpv/",
       },
     ],
     sponsors: [
