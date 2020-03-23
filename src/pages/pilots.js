@@ -8,6 +8,8 @@ import { Card, CardBody, CardTitle, CardHeader } from "reactstrap"
 import { SIDEBAR_CONTENTS } from "../data/sidebarContents"
 import { graphql } from "gatsby"
 
+
+//TODO Refactor take out let
 let pilotsSorted = [[], [], [], [], [], []]
 
 const sortPilotArray = () => {

@@ -5,7 +5,7 @@ import { Button } from "reactstrap"
 //TODO add Adelsried Badge
 //TODO Update with react hooks
 export default props => (
-  <pilot className="pilot-wrapper">
+  <div className="pilot-wrapper">
     <img src={props.profile.profilePicURL} alt="profile" />
     <div className={"pilot-background"}>
       <h4>
@@ -32,7 +32,7 @@ export default props => (
       <Equipment equipment={props.profile.equipment} />
       <PilotSocialLinks socialLinks={props.profile.socialLinks} />
     </div>
-  </pilot>
+  </div>
 )
 
 class Equipment extends Component {
