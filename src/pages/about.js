@@ -49,7 +49,7 @@ export default () => (
           </CardTitle>
         </CardHeader>
         <h4>
-          Bevor ihr im freien fliegen geht, oder zu einem Flugtreffen mitkommen
+          Bevor ihr im Freien fliegen geht, oder zu einem Flugtreffen mitkommen
           wollt sind ein paar sehr wichtige Punkte zu erfüllen:
         </h4>
         <ul className="bullet-list">
