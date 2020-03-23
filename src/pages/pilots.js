@@ -1,6 +1,6 @@
 import PILOTS from "./../data/pilots"
 import React from "react"
-import Pilot from "./../components/Pilot/Pilot"
+import Pilot from "../components/Pilot"
 import { RANKS_ENUM } from "./../data/enums"
 import Layout from "../components/layout"
 import SEO from "../components/seo"

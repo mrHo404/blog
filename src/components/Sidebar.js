@@ -3,7 +3,7 @@ import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SidebarTags from "./SidebarTags"
-import SocialContact from "./../components/SocialContact/SocialContact"
+import SocialContact from "./SocialContact"
 
 const getActions = action => {
   switch (action.type) {

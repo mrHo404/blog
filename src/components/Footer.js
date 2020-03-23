@@ -1,6 +1,6 @@
 import React from "react"
 import PROFILES from "./../data/socialContacts";
-import SocialContact from "./../components/SocialContact/SocialContact";
+import SocialContact from "./SocialContact";
 
 
 export default () => (

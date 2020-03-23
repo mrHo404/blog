@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-import "./Pilot.scss"
-import SocialContact from "./../SocialContact/SocialContact"
+import SocialContact from "./SocialContact"
 import { Button } from "reactstrap"
 import Img from "gatsby-image"
 //TODO add Adelsried Badge
