@@ -144,22 +144,6 @@ export const SIDEBAR_CONTENTS = {
       action: {
         type: "link",
         data: {
-          label: "Niklas Solle",
-          ref: "https://www.facebook.com/revomotionmedia/",
-        },
-      },
-      content: [
-        {
-          title: "Bilder von:",
-          text: [],
-        },
-      ],
-      img: null,
-    },
-    {
-      action: {
-        type: "link",
-        data: {
           label: "flaticon.com",
           ref: "https://www.flaticon.com/authors/freepik",
         },
