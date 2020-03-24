@@ -10,9 +10,9 @@ export default () => (
           <SocialContact key={PROFILE.id} mediaProfile={PROFILE}/>
         ))}
         <p>
-          © Robert Stach, Bavarian Multirotorsquad
+          © Robert Stach, Chi-Tin Ho, Bavarian MultiRotor
           <br/>Alle Logos und Bilder sind Urheberrechtlich geschützt
-          <br/>Design und Umsetzung von Chi-Tin Ho
+          <br/>© Niklas Solle, Pics by Niklas Solle
         </p>
       </div>
     </footer>
