@@ -49,6 +49,16 @@ ul.post-tags {
       border-color: $darkest-blue;
     }
   }
+  .btn-kofi {
+    color: $lightest-blue;
+    background-color: $light-blue;
+    border-color: $lightest-blue;
+    &:hover {
+      color: #fc2751;
+      background-color: $white;
+      border-color: #fc2751;
+    }
+  }
 
   h1,
   h2,

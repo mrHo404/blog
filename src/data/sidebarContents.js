@@ -1,20 +1,22 @@
 export const SIDEBAR_CONTENTS = {
   SVA: [
     {
-      action: {
-        type: "socialContacts",
-        data: [
-          {
-            id: "home",
-            link: "https://sportverein-adelsried.de/",
-          },
-          {
-            id: "facebook",
-            link:
-              "https://www.facebook.com/Drone-Racing-SV-Adelsried-2466568150286674/",
-          },
-        ],
-      },
+      actions: [
+        {
+          type: "socialContacts",
+          data: [
+            {
+              id: "home",
+              link: "https://sportverein-adelsried.de/",
+            },
+            {
+              id: "facebook",
+              link:
+                "https://www.facebook.com/Drone-Racing-SV-Adelsried-2466568150286674/",
+            },
+          ],
+        },
+      ],
       content: [
         {
           title: "Nimm Kontakt zu uns auf und werde Mitglied!",
@@ -27,13 +29,15 @@ export const SIDEBAR_CONTENTS = {
       },
     },
     {
-      action: {
-        type: "link",
-        data: {
-          label: "Michael Kneifl",
-          ref: "mailto:Kneifl.Mic@web.de",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "Michael Kneifl",
+            ref: "mailto:Kneifl.Mic@web.de",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Abteilungsleiter:",
@@ -43,13 +47,15 @@ export const SIDEBAR_CONTENTS = {
       img: null,
     },
     {
-      action: {
-        type: "link",
-        data: {
-          label: "Benjamin Lorenz",
-          ref: "mailto:Shaneking@gmx.de",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "Benjamin Lorenz",
+            ref: "mailto:Shaneking@gmx.de",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Stellvertreter:",
@@ -61,13 +67,15 @@ export const SIDEBAR_CONTENTS = {
   ],
   ABOUT: [
     {
-      action: {
-        type: "button",
-        data: {
-          label: "Zum Forum",
-          ref: "/forum",
+      actions: [
+        {
+          type: "button",
+          data: {
+            label: "Zum Forum",
+            ref: "/forum",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Nimm Kontakt zu uns auf",
@@ -85,13 +93,15 @@ export const SIDEBAR_CONTENTS = {
   ],
   IMPRINT: [
     {
-      action: {
-        type: "link",
-        data: {
-          label: "r.stach.muc@gmail.com",
-          ref: "mailto:r.stach.muc@gmail.com",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "r.stach.muc@gmail.com",
+            ref: "mailto:r.stach.muc@gmail.com",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Angaben gemäß §5 TMG:",
@@ -105,13 +115,15 @@ export const SIDEBAR_CONTENTS = {
       img: null,
     },
     {
-      action: {
-        type: "link",
-        data: {
-          label: "e-recht24.de",
-          ref: "https://www.e-recht24.de",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "e-recht24.de",
+            ref: "https://www.e-recht24.de",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Verantwortlich für den Inhalt nach §55 Abs. 2 RStV:",
@@ -125,13 +137,22 @@ export const SIDEBAR_CONTENTS = {
       img: null,
     },
     {
-      action: {
-        type: "link",
-        data: {
-          label: "Chi-Tin Ho",
-          ref: "mailto:ho.chi-tin@gmx.de",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "Chi-Tin Ho",
+            ref: "mailto:ho.chi-tin@gmx.de",
+          },
         },
-      },
+        {
+          type: "button-kofi",
+          data: {
+            label: "Kauf mir Props",
+            ref: "https://ko-fi.com/C0C71JJTE",
+          },
+        },
+      ],
       content: [
         {
           title: "Webdesign:",
@@ -141,13 +162,15 @@ export const SIDEBAR_CONTENTS = {
       img: null,
     },
     {
-      action: {
-        type: "link",
-        data: {
-          label: "flaticon.com",
-          ref: "https://www.flaticon.com/authors/freepik",
+      actions: [
+        {
+          type: "link",
+          data: {
+            label: "flaticon.com",
+            ref: "https://www.flaticon.com/authors/freepik",
+          },
         },
-      },
+      ],
       content: [
         {
           title: "Icons von:",

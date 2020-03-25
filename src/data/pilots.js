@@ -77,7 +77,7 @@ const PILOTS = [
     socialLinks: [
       {
         id: "home",
-        link: "",
+        link: "https://ko-fi.com/C0C71JJTE",
       },
       {
         id: "youtube",

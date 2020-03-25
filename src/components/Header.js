@@ -71,7 +71,7 @@ export default props => {
         render={data => (
           <div className="background-img">
             <Img fluid={data.headerImg.childImageSharp.fluid}/>
-            <Link to={"/about"} className="logo card-img-overlay">
+            <Link to={"/about"} className="logo">
               <Img fluid={data.logoImg.childImageSharp.fluid} className="w-50 mx-auto" />
               <h1 className="sub-title-line">
                 Das FPV Portal für München und Bayern

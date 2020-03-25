@@ -4,8 +4,9 @@ import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SidebarTags from "./SidebarTags"
 import SocialContact from "./SocialContact"
+import { GiBoatPropeller } from "react-icons/gi"
 
-const getActions = action => {
+const getActions = (action) => {
   switch (action.type) {
     case "button":
       return (
@@ -20,9 +21,15 @@ const getActions = action => {
         </a>
       )
     case "socialContacts":
-      return action.data.map(mediaProfile => (
+      return action.data.map((mediaProfile) => (
         <SocialContact key={mediaProfile.id} mediaProfile={mediaProfile} />
       ))
+    case "button-kofi":
+      return (
+        <Link to={action.data.ref} className="btn btn-kofi m-3">
+          <GiBoatPropeller /> {action.data.label} <GiBoatPropeller />
+        </Link>
+      )
     default:
       return null
   }
@@ -31,7 +38,7 @@ const getActions = action => {
 export default ({ sidebarContent }) => (
   <StaticQuery
     query={sidebarQuery}
-    render={data => {
+    render={(data) => {
       return sidebarContent ? (
         <div>
           <SidebarContent
@@ -57,7 +64,7 @@ export default ({ sidebarContent }) => (
 )
 
 export const SidebarContent = ({ sidebarContent, logos }) =>
-  sidebarContent.map(sidebarCard => (
+  sidebarContent.map((sidebarCard) => (
     <Card key={sidebarCard.content[0].title} className="card-bmr-colors">
       {sidebarCard.img ? (
         <a
@@ -71,13 +78,13 @@ export const SidebarContent = ({ sidebarContent, logos }) =>
         </a>
       ) : null}
       <CardBody>
-        {sidebarCard.content.map(bodyItem => (
+        {sidebarCard.content.map((bodyItem) => (
           <div key={bodyItem.title}>
             <CardTitle className="text-center text-uppercase mb-3">
               <h6 className="mt-2">{bodyItem.title}</h6>
             </CardTitle>
             <div>
-              {bodyItem.text.map(textItem => (
+              {bodyItem.text.map((textItem) => (
                 <div className="text-center" key={textItem}>
                   {textItem}
                 </div>
@@ -85,8 +92,15 @@ export const SidebarContent = ({ sidebarContent, logos }) =>
             </div>
           </div>
         ))}
-        {sidebarCard.action ? (
-          <div className="text-center">{getActions(sidebarCard.action)}</div>
+        {sidebarCard.actions ? (
+          <div className="text-center">
+            {sidebarCard.actions.map((action) => (
+              <div>
+                {getActions(action)}
+                <br />
+              </div>
+            ))}
+          </div>
         ) : null}
       </CardBody>
     </Card>
