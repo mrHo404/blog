@@ -26,9 +26,14 @@ const getActions = (action) => {
       ))
     case "button-kofi":
       return (
-        <Link to={action.data.ref} className="btn btn-kofi m-3">
+        <a
+          href={action.data.ref}
+          className="btn btn-kofi m-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GiBoatPropeller /> {action.data.label} <GiBoatPropeller />
-        </Link>
+        </a>
       )
     default:
       return null

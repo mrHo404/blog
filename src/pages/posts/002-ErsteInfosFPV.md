@@ -56,7 +56,7 @@ Während es Theoretisch möglich wäre, ist es praktisch gesehen allerdings ziem
 
 Hier ist ein kleines Beispiel:
 
-<iframe width="720" height="480" src="http://www.youtube.com/embed/k1fBgvoIlNE" allow="autoplay:encrypted-media" allowfullscreen></iframe>
+<iframe width="400" height="225" src="http://www.youtube.com/embed/k1fBgvoIlNE" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
 Es ist dennoch nicht unmöglich kleinere und leisere Copter zu bauen aber selbst hier ist es nur empfehlenswert sich von Menschen und Menschenansammlungen fern zu halten
 
