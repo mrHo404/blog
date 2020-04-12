@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Bavarian-MultiRotor`,
-    description: `Bleibe auf dem Laufenden was FPV rennen in Deutschland angeht`,
+    description: `Bleibe auf dem Laufenden was FPV Drohnen-Rennen in München, Bayern und Deutschland angeht`,
     author: `@Bavarian-Multirotor`,
   },
   plugins: [

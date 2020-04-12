@@ -11,10 +11,10 @@ const IndexPage = () => {
   let nrOfPages
   return (
     <Layout pageTitle="Servus bei Bavarian-MultiRotor">
-      <SEO title="Home" />
+      <SEO title="Home Drone Racing München" />
       <StaticQuery
         query={indexQuery}
-        render={data => {
+        render={(data) => {
           nrOfPages = Math.ceil(
             data.allMarkdownRemark.totalCount / postsPerPage
           )
@@ -31,7 +31,9 @@ const IndexPage = () => {
                   fluid={node.frontmatter.image.childImageSharp.fluid}
                 />
               ))}
-              <PaginationLinks currentPage={1} nrOfPages={nrOfPages} />
+              {nrOfPages !== 1 ? (
+                <PaginationLinks currentPage={1} nrOfPages={nrOfPages} />
+              ) : null}
             </div>
           )
         }}

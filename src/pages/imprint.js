@@ -6,7 +6,7 @@ import { SIDEBAR_CONTENTS } from "./../data/sidebarContents"
 
 export default () => (
   <Layout pageTitle="Impressum" sidebarContent={SIDEBAR_CONTENTS.IMPRINT}>
-    <SEO title="Impressum" />
+    <SEO title="Impressum " />
     <Card>
       <CardBody>
         <CardHeader>
@@ -735,7 +735,11 @@ export default () => (
         </p>
         <p>
           Datenschutzerklärung:{" "}
-          <a href="https://twitter.com/privacy" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://twitter.com/privacy
           </a>
         </p>

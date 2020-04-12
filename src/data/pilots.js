@@ -389,7 +389,7 @@ const PILOTS = [
     id: 9,
     callsign: "Hakko2204",
     name: "Heiko Berberich",
-    displayRealName: true,
+    displayRealName: false,
     quarterToAir: SEASONS_ENUM.FALL,
     yearToAir: "2015",
     rank: RANKS_ENUM.THREE,
@@ -407,7 +407,7 @@ const PILOTS = [
       raceKwad: {
         names: "Hakko. , Hakko.. , Hakko...",
         frame: "16€ Frame Ali Express!!!",
-        motors: "Emax 2206",
+        motors: "Emax RS2206",
         escs: "Diatone Mamba 35A",
         fc: "Diatone Mamba F4",
         rx: "Graupner",
