@@ -2,7 +2,7 @@
 title: 'FPV fliegen im eigenem Hause'
 date: '2020-04-13 12:00:00'
 author: mr_Ho
-image: postImages/Meteor65.png
+image: postImages/tiny_whoop.jpg
 tags:
 - blog
 - tutorials
@@ -21,12 +21,12 @@ In der folgenden Liste wurden die Copter nach den folgenden Kriterien ausgesucht
 4. Robustheit, weil der Spaß ja auch halten soll
 
 
-##### [BetaFPV Meteor65](https://www.fpv24.com/de/betafpv/betafpv-meteor65-whoop-fpv-quadrocopter-racing-bt20-frsky)
+##### [BetaFPV Meteor65](https://www.fpv24.com/de/betafpv/betafpv-meteor65-whoop-fpv-quadrocopter-racing-bt20-frsky?aid=U-ZecKmg)
 
 Der Ende 2019 erschienene Meteor65 von BetaFPV ist ein sehr attraktives Paket und kommt mit dem Copter, einem USB Ladegerät, zwei 300mAh LiPos, Ersatzpropellern - und das alles gut aufgehoben in einer Schutztasche.
 Funkprotokoll: FrSky / TBS-Crossfire
 
-Kauf-Link: [BetaFPV Meteor65](https://www.fpv24.com/de/betafpv/betafpv-meteor65-whoop-fpv-quadrocopter-racing-bt20-frsky)
+Kauf-Link: [BetaFPV Meteor65](https://www.fpv24.com/de/betafpv/betafpv-meteor65-whoop-fpv-quadrocopter-racing-bt20-frsky?aid=U-ZecKmg)
 
 Hier ein kleines Video von unseren Kumpels bei MunichFPV:
 
