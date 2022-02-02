@@ -1,19 +1,19 @@
+import { graphql, Link, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import React, { useState } from "react"
 import {
   Collapse,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Nav,
   Navbar,
   NavbarBrand,
   NavbarToggler,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownItem,
-  DropdownMenu,
+  UncontrolledDropdown
 } from "reactstrap"
-import { graphql, Link, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 export default props => {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,13 +28,13 @@ export default props => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/forum">Forum</NavLink>
+                <NavLink href="/community">Community</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Wir sind BMR!
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
                   <DropdownItem>
                     <NavLink href="/about">Über Uns</NavLink>
                   </DropdownItem>
@@ -50,7 +50,7 @@ export default props => {
                 <DropdownToggle nav caret>
                   Partner
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu>
                   <DropdownItem>
                     <NavLink href="/adelsried">SV. Adelsried</NavLink>
                   </DropdownItem>

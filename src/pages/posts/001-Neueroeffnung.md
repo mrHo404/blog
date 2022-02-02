@@ -7,7 +7,7 @@ tags:
 - blog
 ---
 ######
-#####Herzlich Willkommen im neuen und verbesserten Hause Bavarian-MultiRotor
+##### Herzlich Willkommen im neuen und verbesserten Hause Bavarian-MultiRotor
 
 Es war mal an der Zeit für einen neuen Look. BMR sieht jetzt mehr nach "Business Casual" statt nach "Drei-Tage Bart" aus. Die Seite wurde mit React und Gatsby gebaut und ist (bis auf ein paar kleine Schönheitsfehler) voll responsive! :D Bitte gebt uns bescheid, was euch an der Website nicht gefällt und wir werden es in Betracht ziehen.
 

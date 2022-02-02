@@ -1,10 +1,11 @@
-import React from "react"
-import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { graphql, Link, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React from "react"
+import { GiBoatPropeller } from "react-icons/gi"
+import { Badge, Card, CardBody, CardText, CardTitle } from "reactstrap"
+import { slugify } from "./../utils/util"
 import SidebarTags from "./SidebarTags"
 import SocialContact from "./SocialContact"
-import { GiBoatPropeller } from "react-icons/gi"
 
 const getActions = (action) => {
   switch (action.type) {
@@ -155,7 +156,7 @@ export const RecentPostsCard = ({ recentPosts }) => (
               <CardTitle>
                 <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
               </CardTitle>
-              {/* <ul>
+              <ul>
                     {node.frontmatter.tags.map((tag) => (
                       <li key={tag}>
                         <Link to={`/tag/${slugify(tag)}`}>
@@ -163,7 +164,7 @@ export const RecentPostsCard = ({ recentPosts }) => (
                         </Link>
                       </li>
                     ))}
-                  </ul>*/}
+                  </ul>
             </CardBody>
           </Card>
         ))}

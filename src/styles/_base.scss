@@ -34,24 +34,7 @@ h6 {
 hr {
   background-color: $lightest-blue;
 }
-.navbar,
-.dropdown-menu-right {
-  background-image: linear-gradient(to top, $dark-blue, $darkest-blue);
-  line-height: 1;
-  .dropdown-item {
-    &:hover {
-      background-image: linear-gradient(to bottom, $light-blue, $dark-blue);
-    }
-  }
-}
 
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-brand {
-  color: $light-blue;
-  &:hover {
-    color: $lightest-blue;
-  }
-}
 ul {
   list-style: none;
   padding: 0;

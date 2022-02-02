@@ -71,8 +71,8 @@ export const SIDEBAR_CONTENTS = {
         {
           type: "button",
           data: {
-            label: "Zum Forum",
-            ref: "/forum",
+            label: "Zur community",
+            ref: "/community",
           },
         },
       ],

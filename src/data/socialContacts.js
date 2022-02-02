@@ -9,11 +9,11 @@ const PROFILES = [
 	},
 	{
 		id: 'facebook',
-		link: 'https://www.facebook.com/BavarianMultiRotor/',
+		link: 'https://www.facebook.com/BavarianMultiRotor',
 	},
 	{
 		id: 'instagram',
-		link: 'https://www.instagram.com/bavarianmultirotor/',
+		link: 'https://www.instagram.com/bavarianmultirotor',
 	}
 ];
 
