@@ -1,18 +1,16 @@
-@import './variables';
-
 @font-face {
-  font-family: 'TitilliumLight';
-  src: url($font-file-path) format('truetype');
+  font-family: 'titilliumLight';
+  src: url(../assets//fonts/titilliumWeb-light.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'TitilliumBold';
-  src: url($font-file-bold-path) format('truetype');
+  font-family: 'titilliumBold';
+  src: url(../assets/fonts/titilliumWeb-Bold.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'TitilliumSemiBold';
-  src: url($site-font-semi-bold) format('truetype');
+  font-family: 'titilliumSemiBold';
+  src: url(../assets/fonts/TitilliumWeb-SemiBold.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'TitilliumSemiBoldItalic';
-  src: url($font-file-semi-bold-it-path) format('truetype');
+  font-family: 'titilliumSemiBoldItalic';
+  src: url(../assets/fonts/TitilliumWeb-SemiBoldItalic.ttf) format('truetype');
 }
